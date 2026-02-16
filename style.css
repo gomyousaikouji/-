@@ -1,0 +1,63 @@
+/* ===== ヘッダー ===== */
+
+.header {
+  background: url("IMG_9242.JPG") center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.header h1 {
+  font-size: 48px;
+  text-align: center;
+  margin: 0;
+}
+
+.sub {
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+/* ===== メニュー ===== */
+
+.menu {
+  margin: 40px auto;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 12px 22px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* ホバー */
+
+.menu a:hover {
+  background: white;
+  color: black;
+}
+
+/* クリック感 */
+
+.menu a:active {
+  transform: scale(0.96);
+}
+
+
+
