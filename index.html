@@ -43,11 +43,6 @@ h1{
   font-size:40px;
   margin:0;
 }
-nav a{
-  margin:0 15px;
-  text-decoration:none;
-  color:#444;
-}
 
 section{
   max-width:900px;
@@ -72,14 +67,37 @@ footer{
 </div>
 <p>願いを受け入れる心</p>
 
-<nav>
-<a href="#">お寺について</a>
-<a href="#">年間行事案内</a>
-<a href="#">日常勤行</a>
-<a href="#">アクセス</a>
+<nav class="menu">
+  <ul>
+    <li><a href="#temple">お寺について</a></li>
+    <li><a href="#events">年間行事</a></li>
+    <li><a href="#gongyo">日常勤行</a></li>
+    <li><a href="#access">アクセス</a></li>
+  </ul>
 </nav>
 </header>
 
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+
+  padding: 8px 18px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+/* カーソル乗せたとき */
+.menu a:hover {
+  background: white;
+  color: black;
+}
+
+/* 押した瞬間 */
+.menu a:active {
+  transform: scale(0.95);
+}  
 <section>
 <h2>お知らせ</h2>
 <p></p>
