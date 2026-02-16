@@ -3,128 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <title>西光寺</title>
-
-<style>
-body{
-  margin:0;
-  font-family: "Hiragino Mincho ProN", serif;
-  background:#f7f5f2;
-  color:#333;
-}
-
-header{
-  height: 70vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-
-  background:
-    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-    url("IMG_9242.JPG") center/cover no-repeat;
-
-  color:white;
-}
-.title-box{
-  position:relative;
-  display:inline-block;
-}
-
-.zan{
-  position:absolute;
-  top:-20px;
-  left:-40px;
-  font-size:18px;
-  color:#white;
-}
-
-h1{
-  font-size:40px;
-  margin:0;
-}
-
-section{
-  max-width:900px;
-  margin:60px auto;
-  padding:0 20px;
-}
-
-footer{
-  text-align:center;
-  padding:40px;
-  background:#eee;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<div class="title-box">
-<span class="zan">攝刕山</span>
-<h1>西光寺</h1>
-</div>
-<p>願いを受け入れる心</p>
-
-<main>
-  <nav class="menu">
-    <ul>
-      <li><a href="#temple">お寺について</a></li>
-      <li><a href="#events">年間行事</a></li>
-      <li><a href="#gongyo">日常勤行</a></li>
-      <li><a href="#access">アクセス</a></li>
-    </ul>
-  </nav>
-  <style>
-    .no-dot-list {
-      list-style-type: none; /* 点を非表示にする */
-      padding-left: 0; /* インデントをリセット */
-      margin: 0; /* リスト全体の余白をリセット　*/
-    }
-    </style>
-</main>
+<header class="header">
+  <h1>
+    <span class="sub">攝刕山</span><br>
+    西光寺
+  </h1>
 </header>
 
-menu ul {
-  list-style: none;      /* ・消す */
-  display: flex;         /* 横並び */
-  justify-content: center;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
+<main>
 
-.menu a {
-  display: block;
-  padding: 12px 22px;
+<nav class="menu">
+  <ul>
+    <li><a href="#temple">お寺について</a></li>
+    <li><a href="#events">年間行事</a></li>
+    <li><a href="#gongyo">日常勤行</a></li>
+    <li><a href="#access">アクセス</a></li>
+  </ul>
+</nav>
 
-  background: rgba(255,255,255,0.2);
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;    /* 四角だけど少し丸め */
-  transition: 0.3s;
-}
+<section id="temple"></section>
+<section id="events"></section>
+<section id="gongyo"></section>
+<section id="access"></section>
 
-/* ホバー */
-.menu a:hover {
-  background: white;
-  color: black;
-}
-
-/* 押した感じ */
-.menu a:active {
-  transform: scale(0.96);
-}
-  
-<section>
-<h2>お知らせ</h2>
-<p></p>
-</section>
-
-<footer>
-©西光寺
-</footer>
+</main>
 
 </body>
 </html>
