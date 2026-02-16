@@ -77,27 +77,37 @@ footer{
 </nav>
 </header>
 
+menu ul {
+  list-style: none;      /* ・消す */
+  display: flex;         /* 横並び */
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
 .menu a {
+  display: block;
+  padding: 12px 22px;
+
+  background: rgba(255,255,255,0.2);
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  letter-spacing: 2px;
-
-  padding: 8px 18px;
-  border-radius: 20px;
+  border-radius: 6px;    /* 四角だけど少し丸め */
   transition: 0.3s;
 }
 
-/* カーソル乗せたとき */
+/* ホバー */
 .menu a:hover {
   background: white;
   color: black;
 }
 
-/* 押した瞬間 */
+/* 押した感じ */
 .menu a:active {
-  transform: scale(0.95);
-}  
+  transform: scale(0.96);
+}
+  
 <section>
 <h2>お知らせ</h2>
 <p></p>
