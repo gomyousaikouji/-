@@ -197,3 +197,19 @@ navbar {
 .temple {
   font-size: 20px;
 }
+
+.footer-sns {
+  margin-top: 10px;
+}
+
+.footer-sns img {
+  width: 28px;
+  height: 28px;
+  transition: 0.3s;
+}
+
+/* ホバーで少し反応 */
+.footer-sns img:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
