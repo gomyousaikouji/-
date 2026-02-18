@@ -33,7 +33,6 @@
   height: 100%;
 }
 
-/* ===== 寺タイトル ===== */
 .temple-title {
   position: absolute;
   top: 40%;
@@ -41,27 +40,41 @@
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+
+  /* 筆文字風フォント */
   font-family:
-    "Yu Mincho",
-    "Hiragino Mincho ProN",
+    "Shippori Mincho B1",
+    "Zen Old Mincho",
     serif;
 }
 
-/* 山号（小さく左上） */
+/* 山号 */
 .temple-title .san {
   position: absolute;
-  top: -20px;
-  left: -40px;
-  font-size: 14px;
-  letter-spacing: 2px;
+  top: -25px;
+  left: -50px;
+  font-size: 16px;
+  letter-spacing: 3px;
 }
 
-/* 寺名メイン */
+/* 寺名 */
 .temple-title .tera {
-  font-size: 42px;
+  font-size: 48px;
   margin: 0;
-  letter-spacing: 8px;
-}/* ===== メニューバー ===== */
+  letter-spacing: 10px;
+}
+
+.bg-slideshow::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  top: 0;
+  left: 0;
+}
+
+/* ===== メニューバー ===== */
 
 .navbar {
   background: rgba(0,0,0,0.75);
