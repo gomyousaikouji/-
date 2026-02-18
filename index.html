@@ -9,31 +9,23 @@
 <body>
 
 <header class="header">
-  <h1>
-    <span class="sub">攝刕山</span><br>
-    西光寺
-  </h1>
-  
-  <header class="hero">
-  <div class="slides">
+
+  <!-- 背景スライド -->
+  <div class="bg-slideshow">
     <img src="IMG_9242.JPG" class="active">
     <img src="IMG_4102.JPG">
     <img src="IMG_4101.JPG">
-    <img src="IMG_4098.JPG"> 
-    <img src="IMG_4097.JPG"> 
+    <img src="IMG_4098.JPG">
+    <img src="IMG_4097.JPG">
   </div>
-  </header>
 
-<script>
-const slides = document.querySelectorAll(".slides img");
-let current = 0;
-
-setInterval(() => {
-  slides[current].classList.remove("active");
-  current = (current + 1) % slides.length;
-  slides[current].classList.add("active");
-}, 4000);
-</script>
+  <!-- タイトル -->
+  <div class="header-content">
+    <div class="temple-title">
+      <p class="san">攝刕山</p>
+      <h1 class="tera">西光寺</h1>
+    </div>
+  </div>
 </header>
   
 <main>
@@ -123,5 +115,14 @@ setInterval(() => {
 
   </div>
 </footer>
-</body>
+  <script>
+const slides = document.querySelectorAll(".bg-slideshow img");
+let current = 0;
+
+setInterval(() => {
+  slides[current].classList.remove("active");
+  current = (current + 1) % slides.length;
+  slides[current].classList.add("active");
+}, 4000);
+</script></body>
 </html>
