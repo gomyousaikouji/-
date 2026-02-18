@@ -15,6 +15,26 @@
   </h1>
 </header>
 
+<header class="hero">
+
+  <div class="slides">
+    <img src="temple1.jpg" class="active">
+    <img src="temple2.jpg">
+    <img src="temple3.jpg">
+  </div>
+  <h1 class="hero-title">攝刕山 西光寺</h1>
+<script>
+const slides = document.querySelectorAll(".slides img");
+let current = 0;
+
+setInterval(() => {
+  slides[current].classList.remove("active");
+  current = (current + 1) % slides.length;
+  slides[current].classList.add("active");
+}, 4000);
+</script>
+</header>
+  
 <main>
 
 <nav class="navbar">
