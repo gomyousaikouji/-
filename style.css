@@ -173,7 +173,7 @@ navbar {
 .footer {
   background: #36454F; /* チャコール */
   color: white;
-  padding: 20px 10px;  /* ←縦幅スリム */
+  padding: 10px 5px;  /* ←縦幅スリム */
   text-align: center;
 }
 
