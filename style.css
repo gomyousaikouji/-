@@ -1,13 +1,46 @@
 /* ===== ヘッダー ===== */
 
 .header {
-  background: url("IMG_9242.JPG") center/cover no-repeat;
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* 写真 */
+
+.slides img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: 1s;
+}
+
+/* 表示中 */
+
+.slides img.active {
+  opacity: 1;
+}
+
+/* タイトル */
+
+.hero-title {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-shadow: 0 0 10px black;
 }
 
 .header h1 {
