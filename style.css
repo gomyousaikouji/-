@@ -28,6 +28,10 @@
   padding: 15px 0;
 }
 
+navbar {
+  background: #36454F;
+}
+
 .navbar ul {
   list-style: none;
   display: flex;
@@ -130,38 +134,15 @@
 }
 
 .footer {
-  background: #222;
-  color: #fff;
-  padding: 40px 20px;
+  background: #36454F; /* チャコール */
+  color: white;
+  padding: 20px 10px;  /* ←縦幅スリム */
   text-align: center;
 }
 
-.footer-logo {
-  font-size: 20px;
-  margin-bottom: 15px;
-  letter-spacing: 3px;
-}
-
-.footer-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-.footer-nav a {
-  color: #fff;
-  text-decoration: none;
+.footer-address p {
+  margin: 2px 0;       /* 行間コンパクト */
   font-size: 14px;
-}
-
-.footer-nav a:hover {
-  opacity: 0.7;
-}
-
-.copyright {
-  font-size: 12px;
-  opacity: 0.6;
 }
 
 .footer-title {
@@ -169,16 +150,13 @@
   justify-content: center;
   align-items: baseline;
   gap: 8px;
-}
-
-.footer-logo {
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  margin-bottom: 8px;
 }
 
 .mountain {
-  font-size: 14px;  /* 少し小さく */
+  font-size: 14px;
 }
 
 .temple {
-  font-size: 20px;  /* メイン */
+  font-size: 20px;
 }
