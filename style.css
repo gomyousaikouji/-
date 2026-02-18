@@ -1,60 +1,67 @@
-/* ===== ヘッダー ===== */
-
+/* ===== ヘッダー全体 ===== */
 .header {
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 10px rgba(0,0,0,0.7);
-}
-
-.hero {
   position: relative;
   height: 400px;
   overflow: hidden;
 }
 
-/* 写真 */
+/* ===== 背景スライド ===== */
+.bg-slideshow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
 
-.slides img {
+.bg-slideshow img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: 1s;
+  transition: opacity 1.5s ease;
 }
 
-/* 表示中 */
-
-.slides img.active {
+.bg-slideshow img.active {
   opacity: 1;
 }
 
-/* タイトル */
+/* ===== タイトル前面 ===== */
+.header-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
 
-.hero-title {
+/* ===== 寺タイトル ===== */
+.temple-title {
   position: absolute;
-  bottom: 20px;
+  top: 40%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   color: white;
-  text-shadow: 0 0 10px black;
-}
-
-.header h1 {
-  font-size: 48px;
   text-align: center;
+  font-family:
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    serif;
+}
+
+/* 山号（小さく左上） */
+.temple-title .san {
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+/* 寺名メイン */
+.temple-title .tera {
+  font-size: 42px;
   margin: 0;
-}
-
-.sub {
-  font-size: 18px;
-  letter-spacing: 4px;
-}
-
-/* ===== メニューバー ===== */
+  letter-spacing: 8px;
+}/* ===== メニューバー ===== */
 
 .navbar {
   background: rgba(0,0,0,0.75);
