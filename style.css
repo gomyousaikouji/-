@@ -133,6 +133,43 @@ navbar {
   transform: scale(0.95);
 }
 
+/* インフォメーション */
+
+.info {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.info h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+/* 各お知らせ */
+.info-item {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.date {
+  color: #666;
+  margin-right: 10px;
+}
+
+.tag {
+  border: 1px solid #333;
+  padding: 2px 10px;
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.info-item p {
+  margin-top: 10px;
+}
+
 .footer {
   background: #36454F; /* チャコール */
   color: white;
