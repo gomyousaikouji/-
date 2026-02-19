@@ -223,8 +223,8 @@ navbar {
   position:relative;
   display:inline-block;
   padding:14px 38px;
-  background:#gold;
-  color:#2b2b2b; /* チャコール文字 */
+  background:#f2c94c;
+  color:#36454F; /* チャコール文字 */
   font-size:18px;
   text-decoration:none;
   border-radius:6px;
@@ -239,14 +239,14 @@ navbar {
   inset:0;
   background:url("icho.png") no-repeat right bottom;
   background-size:120px;
-  opacity:0.15;
+  opacity:0.18;
   pointer-events:none;
 }
 
 /* ホバー */
 .jihou-btn:hover{
   transform:translateY(-2px);
-  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  box-shadow:0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* クリック時 */
