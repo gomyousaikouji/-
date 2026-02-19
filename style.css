@@ -245,9 +245,11 @@ navbar {
   content:"";
   position:absolute;
   inset:0;
-  background:url("chou.jpg") repeat;
-  background-size:180px;
-  opacity:0.28;
+  background:url("chou.jpg");
+  background-repeat:no-repeat;
+  background-position:center bottom;
+  background-size:200px;
+  opacity:0.3;
   pointer-events:none;
 }
 
