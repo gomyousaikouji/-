@@ -53,7 +53,7 @@
 
 /* 攝刕山 */
 .mountain{
-  font-size:0.6em;
+  font-size:10px;
   margin-right:10px;
 }
 
@@ -212,6 +212,48 @@ navbar {
   margin-top: 10px;
 }
 
+/* ボタン全体 */
+.info-button-wrap{
+  text-align:center;
+  margin:40px 0;
+}
+
+/* ボタン本体 */
+.jihou-btn{
+  position:relative;
+  display:inline-block;
+  padding:14px 38px;
+  background:#36454F;
+  color:#2b2b2b; /* チャコール文字 */
+  font-size:18px;
+  text-decoration:none;
+  border-radius:6px;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+/* イチョウの葉の柄（透かし） */
+.jihou-btn::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url("icho.png") no-repeat right bottom;
+  background-size:80px;
+  opacity:0.15;
+  pointer-events:none;
+}
+
+/* ホバー */
+.jihou-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* クリック時 */
+.jihou-btn:active{
+  transform:translateY(1px);
+  box-shadow:none;
+}
 .footer {
   background: #36454F; /* チャコール */
   color: white;
