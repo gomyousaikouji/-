@@ -238,7 +238,7 @@ navbar {
   position:absolute;
   inset:0;
   background:url("icho.png") no-repeat right bottom;
-  background-size:95px;
+  background-size:120px;
   opacity:0.15;
   pointer-events:none;
 }
