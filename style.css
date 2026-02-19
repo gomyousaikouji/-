@@ -218,43 +218,50 @@ navbar {
   margin:40px 0;
 }
 
-/* ボタン本体 */
-.jihou-btn{
-  position:relative;
+/* 和風六角ボタン */
+.temple-btn{
   display:inline-block;
-  padding:14px 38px;
-  background:#f2c94c;
-  color:#36454F; /* チャコール文字 */
+  padding:16px 50px;
   font-size:18px;
+  color:#36454F;
   text-decoration:none;
-  border-radius:6px;
+  position:relative;
+  background:#b7b06a; /* 山吹寄り渋カラー */
   overflow:hidden;
-  transition:0.3s;
+  
+  /* 六角形っぽい形 */
+  clip-path:polygon(
+    8% 0, 92% 0,
+    100% 50%,
+    92% 100%, 8% 100%,
+    0 50%
+  );
+
+  transition:.3s;
 }
 
-/* イチョウの葉の柄（透かし） */
-.jihou-btn::before{
+/* イチョウ模様 */
+.temple-btn::before{
   content:"";
   position:absolute;
   inset:0;
-  background:url("chou.jpg") no-repeat right bottom;
-  background-size:120px;
-  opacity:0.18;
+  background:url("chou.jpg") repeat;
+  background-size:180px;
+  opacity:0.28;
   pointer-events:none;
 }
 
 /* ホバー */
-.jihou-btn:hover{
+.temple-btn:hover{
   transform:translateY(-2px);
-  box-shadow:0 4px 12px rgba(0,0,0,0.2);
+  filter:brightness(1.05);
 }
 
-/* クリック時 */
-.jihou-btn:active{
-  transform:translateY(1px);
-  box-shadow:none;
-}
-.footer {
+/* 押した感じ */
+.temple-btn:active{
+  transform:translateY(2px);
+  filter:brightness(0.95);
+}.footer {
   background: #36454F; /* チャコール */
   color: white;
   padding: 10px 5px;  /* ←縦幅スリム */
