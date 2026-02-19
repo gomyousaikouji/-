@@ -27,54 +27,43 @@
 }
 
 /* ===== タイトル前面 ===== */
-.header-content {
-  position: relative;
-  z-index: 1;
-  height: 100%;
+
+.hero-text{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:white;
+  text-align:center;
 }
 
-.temple-title {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-
-  /* 筆文字風フォント */
-  font-family:
-    "Shippori Mincho B1",
-    "Zen Old Mincho",
-    serif;
+/* 宗派 */
+.sect{
+  font-size:16px;
+  letter-spacing:3px;
+  margin-bottom:10px;
 }
 
-/* 山号 */
-.temple-title .san {
-  position: absolute;
-  top: -25px;
-  left: -50px;
-  font-size: 16px;
-  letter-spacing: 3px;
+/* タイトル */
+.temple-title{
+  font-size:48px;
+  font-family: "Shippori Mincho B1", serif;
+  margin:0;
 }
 
-/* 寺名 */
-.temple-title .tera {
-  font-size: 48px;
-  margin: 0;
-  letter-spacing: 10px;
+/* 攝刕山 */
+.mountain{
+  font-size:0.6em;
+  margin-right:10px;
 }
 
-.bg-slideshow::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.35);
-  top: 0;
-  left: 0;
-}
-
-/* ===== メニューバー ===== */
+/* ローマ字 */
+.romaji{
+  margin-top:10px;
+  letter-spacing:6px;
+  font-size:14px;
+  opacity:0.8;
+}/* ===== メニューバー ===== */
 
 .navbar {
   background: rgba(0,0,0,0.75);
