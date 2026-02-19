@@ -53,7 +53,7 @@
 
 /* 攝刕山 */
 .mountain{
-  font-size:10px;
+  font-size:25px;
   margin-right:10px;
 }
 
@@ -223,7 +223,7 @@ navbar {
   position:relative;
   display:inline-block;
   padding:14px 38px;
-  background:#36454F;
+  background:#gold;
   color:#2b2b2b; /* チャコール文字 */
   font-size:18px;
   text-decoration:none;
@@ -238,7 +238,7 @@ navbar {
   position:absolute;
   inset:0;
   background:url("icho.png") no-repeat right bottom;
-  background-size:80px;
+  background-size:95px;
   opacity:0.15;
   pointer-events:none;
 }
