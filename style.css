@@ -114,97 +114,46 @@ navbar {
   opacity: 0.8;
 }
 
-/* ボタン配置 */
-
+/* ボタン全体を横並び */
 .wa-menu {
   display: flex;
   justify-content: center;
-  flex-wrap:wrap;
   gap: 30px;
-  margin: 80px 0;
+  margin: 40px 0;
+  flex-wrap: wrap;
 }
 
-/* ボタン本体 */
-
+/* ボタン */
 .wa-btn {
   position: relative;
-  width: 220px;
-  text-align:center;
+  display: inline-block;
+  width: 160px;
   text-decoration: none;
-  color:#36454F;
-  border:1px solid #e6c35c;
-  background:#faf8f2;
-  overflow:hidden;
-  transition: 0.2s;
 }
 
-/* 画像 */
-
+/* ロゴ画像 */
 .wa-btn img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
-/* ロゴを背景にする */
-.wa-btn::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background-image:url("924668.jpg");
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:70%;
-  opacity:0.08;
-  pointer-events:none;
-}
-
-.wa-btn span{
-  position:relative;
-  z-index:2;
-  font-size:18px;
-}
-  
-/* 円の中に文字 */
-
-
+/* ロゴの中の文字 */
 .wa-btn span {
   position: absolute;
   top: 50%;
-  left: 58%;
+  left: 50%;
   transform: translate(-50%, -50%);
-
-  writing-mode: vertical-rl;   /* ← 縦書き */
-  text-orientation: upright;
-
-  font-size: 22px;
-  font-weight: 500;
-  color: black;
-  text-align: center;
-
-  font-family:
-    "Yu Mincho",
-    "Hiragino Mincho ProN",
-    "Noto Serif JP",
-    serif;
+  color: #4a3b2c;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
-/* ホバー */
-
+/* ふわっと浮く効果 */
 .wa-btn:hover {
-  transform: scale(1.05);
-}
-
-/* クリック時（押した感じ） */
-
-.wa-btn:active {
-  transform: scale(0.95);
-}
-
-/* ===== 共通デザイン ===== */
-body{
-  margin:0;
-  font-family: serif;
-  background:#faf8f2;
+  transform: translateY(-5px);
+  transition: 0.3s;
 }
 
 /* ===== 年間行事タイムライン ===== */
