@@ -212,6 +212,60 @@ navbar {
   margin-top: 10px;
 }
 
+.info-item{
+  border-bottom:1px solid #d8d2c4;
+  padding:18px 0;
+}
+
+.info-header{
+  cursor:pointer;
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+
+.info-date{
+  font-size:14px;
+  color:#8a8476;
+}
+
+.info-title{
+  font-size:16px;
+  color:#36454F;
+  position:relative;
+}
+
+/* 控えめな和風矢印 */
+.info-title::after{
+  content:"＋";
+  margin-left:8px;
+  font-size:14px;
+  color:#8a8476;
+  transition:0.3s;
+}
+
+/* 詳細 */
+.info-detail{
+  max-height:0;
+  overflow:hidden;
+  transition:all 0.4s ease;
+  font-size:14px;
+  line-height:1.9;
+  color:#555;
+  padding-left:80px;
+}
+
+/* 開いた部分に山吹ライン */
+.info-item.active .info-detail{
+  max-height:300px;
+  margin-top:12px;
+  padding:14px 0 0 80px;
+  border-top:2px solid #f2c94c; /* 薄い山吹 */
+}
+.info-item.active .info-title::after{
+  content:"－";
+}
+
 /* ボタン全体 */
 .info-button-wrap{
   text-align:center;
