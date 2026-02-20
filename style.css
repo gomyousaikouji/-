@@ -114,7 +114,7 @@ navbar {
   opacity: 0.8;
 }
 
-/* ボタン全体を横並び */
+/* 横並びレイアウト */
 .wa-menu {
   display: flex;
   justify-content: center;
@@ -123,10 +123,10 @@ navbar {
   flex-wrap: wrap;
 }
 
-/* ボタン */
+/* ボタン本体 */
 .wa-btn {
   position: relative;
-  width: 180px;
+  width: 170px;
   text-decoration: none;
 }
 
@@ -135,49 +135,43 @@ navbar {
   width: 100%;
   display: block;
   position: relative;
-  z-index 2;
-  transition: 0.3s;
-}
-
-/* ロゴの中の文字 */
-.wa-btn span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #4a3b2c;
-  font-size: 16px;
-  font-weight: bold;
-  white-space: nowrap;
-}
-
-/* ふわっと浮く効果 */
-.wa-btn:hover {
-  transform: translateY(-5px);
-}
-
-.shadow-logo {
-  position: absolute;
-  width: 120%;
-  top: 10px;
-  left: -10%;
-  opacity: 0.15;
-  z-index: 1;
-}
-
-.main-logo {
-  position: relative;
   z-index: 2;
 }
 
+/* 影ロゴ（CSSで作る） */
+.wa-btn::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("924668.jpg") no-repeat center/contain;
+  opacity: 0.15;
+  filter: blur(4px);
+  z-index: 1;
+}
+
+/* 縦書き文字 */
 .wa-btn span {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-weight: bold;
-  color: #3e3125;
+  
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+
+  font-size: 17px;
+  letter-spacing: 4px;
+  color: #2f2a24;
   z-index: 3;
+}
+
+/* ホバーで少し浮く */
+.wa-btn:hover {
+  transform: translateY(-6px);
+  transition: 0.3s ease;
 }
 
 /* ===== 年間行事タイムライン ===== */
