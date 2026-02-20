@@ -119,8 +119,9 @@ navbar {
 .wa-menu {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  margin: 60px 0;
+  flex-wrap:wrap;
+  gap: 30px;
+  margin: 80px 0;
 }
 
 /* ボタン本体 */
@@ -128,7 +129,12 @@ navbar {
 .wa-btn {
   position: relative;
   width: 220px;
+  text-align:center;
   text-decoration: none;
+  color:#36454F;
+  border:1px solid #e6c35c;
+  background:#faf8f2;
+  overflow:hidden;
   transition: 0.2s;
 }
 
