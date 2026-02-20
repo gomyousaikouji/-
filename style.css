@@ -126,7 +126,7 @@ navbar {
 /* ボタン本体 */
 .wa-btn {
   position: relative;
-  width: 170px;
+  width: 210px;
   text-decoration: none;
 }
 
@@ -156,7 +156,7 @@ navbar {
 .wa-btn span {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 55%;
   transform: translate(-50%, -50%);
   
   writing-mode: vertical-rl;
@@ -164,7 +164,7 @@ navbar {
   text-orientation: upright;
 
   font-family: 'Yuji Syuku', serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 700;
   letter-spacing: 8px;
   color: #2b2620;
