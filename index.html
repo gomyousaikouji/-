@@ -117,9 +117,63 @@ document.querySelectorAll('.info-header').forEach(item=>{
     寺報（御名だより）
   </a>
 </div>
-
-  
+ 
 </section>
+
+<section class="active-gallery">
+
+<h2 class="gallery-title">Active Gallery</h2>
+
+<!-- 1 -->
+<div class="gallery-block">
+  <h3 class="category-title">法座・法要・行事</h3>
+
+  <div class="gallery-row">
+    <div class="photo" style="background-image:url('photo1.jpg')"></div>
+    <div class="photo" style="background-image:url('photo2.jpg')"></div>
+
+    <div class="comment charcoal">
+      <div>
+        ご法座や法要の様子をご紹介します。<br>
+        皆さまと過ごす大切な時間です。
+        <br>
+        <button class="more-btn">写真をもっと表示する</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="extra-photos">
+    <div class="photo" style="background-image:url('photo3.jpg')"></div>
+    <div class="photo" style="background-image:url('photo4.jpg')"></div>
+  </div>
+</div>
+
+
+<!-- 2 -->
+<div class="gallery-block">
+  <h3 class="category-title">子ども向け行事</h3>
+
+  <div class="gallery-row">
+    <div class="comment cream">
+      <div>
+        子どもたちの笑顔あふれる時間。<br>
+        学びと遊びのひととき。
+        <br>
+        <button class="more-btn">写真をもっと表示する</button>
+      </div>
+    </div>
+
+    <div class="photo" style="background-image:url('photo5.jpg')"></div>
+    <div class="photo" style="background-image:url('photo6.jpg')"></div>
+  </div>
+
+  <div class="extra-photos">
+    <div class="photo" style="background-image:url('photo7.jpg')"></div>
+    <div class="photo" style="background-image:url('photo8.jpg')"></div>
+  </div>
+</div>
+
+</section>  
 
 <section id="temple"></section>
 <section id="events"></section>
@@ -167,5 +221,22 @@ setInterval(() => {
   current = (current + 1) % slides.length;
   slides[current].classList.add("active");
 }, 4000);
-</script></body>
+</script>
+
+<script>
+document.querySelectorAll(".more-btn").forEach(button=>{
+  button.addEventListener("click",function(){
+    const extra=this.closest(".gallery-block").querySelector(".extra-photos");
+    extra.classList.toggle("active");
+
+    if(extra.classList.contains("active")){
+      this.textContent="閉じる";
+    }else{
+      this.textContent="写真をもっと表示する";
+    }
+  });
+});
+</script>  
+  
+</body>
 </html>
