@@ -163,11 +163,14 @@ navbar {
   -webkit-writing-mode: vertical-rl;
   text-orientation: upright;
 
-  font-family: serif;
-  font-size: 16px;
-  letter-spacing: 6px;
-  color: #2f2a24;
+  font-family: 'Yuji Syuku', serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  color: #2b2620;
   z-index: 3;
+
+  white-space: nowrap;
 }
 
 /* ホバーで少し浮く */
