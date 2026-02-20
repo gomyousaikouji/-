@@ -156,6 +156,30 @@ navbar {
   transform: translateY(-5px);
 }
 
+.shadow-logo {
+  position: absolute;
+  width: 120%;
+  top: 10px;
+  left: -10%;
+  opacity: 0.15;
+  z-index: 1;
+}
+
+.main-logo {
+  position: relative;
+  z-index: 2;
+}
+
+.wa-btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #3e3125;
+  z-index: 3;
+}
+
 /* ===== 年間行事タイムライン ===== */
 .annual-timeline{
   position:relative;
