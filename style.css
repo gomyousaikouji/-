@@ -175,6 +175,126 @@ navbar {
   transform: scale(0.95);
 }
 
+/* ===== 共通デザイン ===== */
+body{
+  margin:0;
+  font-family: serif;
+  background:#faf8f2;
+}
+
+/* ===== 年間行事タイムライン ===== */
+.annual-timeline{
+  position:relative;
+  padding:100px 20px;
+}
+
+/* ===== 背景イチョウ ===== */
+.annual-timeline{
+  position:relative;
+  padding:100px 20px;
+  background:#faf8f2;
+  overflow:hidden;
+}
+
+.annual-timeline::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:url("https://www.transparenttextures.com/patterns/ginkgo.png");
+  opacity:0.05;  /* 薄く */
+  pointer-events:none;
+}
+
+/* ===== 見出し ===== */
+.timeline-heading{
+  text-align:center;
+  font-size:28px;
+  margin-bottom:80px;
+  letter-spacing:5px;
+  color:#36454F;
+  border-bottom:2px solid #e6c35c;
+  display:inline-block;
+  padding-bottom:10px;
+}
+
+/* ===== タイムライン縦線 ===== */
+.timeline{
+  position:relative;
+  max-width:900px;
+  margin:0 auto;
+}
+
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  width:2px;
+  height:100%;
+  background:#e6c35c;
+}
+
+/* ===== 各項目 ===== */
+.timeline-item{
+  position:relative;
+  width:50%;
+  padding:40px;
+  opacity:0;
+  transform:translateY(60px);
+  transition:all 0.8s ease;
+}
+
+/* 交互 */
+.timeline-item:nth-child(odd){
+  left:0;
+  text-align:right;
+}
+
+.timeline-item:nth-child(even){
+  left:50%;
+}
+
+/* 丸ポイント */
+.timeline-item::before{
+  content:"";
+  position:absolute;
+  top:60px;
+  right:-8px;
+  width:16px;
+  height:16px;
+  background:#e6c35c;
+  border-radius:50%;
+}
+
+.timeline-item:nth-child(even)::before{
+  left:-8px;
+}
+
+/* 中身 */
+.timeline-content{
+  background:#ffffff;
+  padding:25px;
+  border-radius:8px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.timeline-content h3{
+  margin-bottom:10px;
+  color:#b7a94a;
+}
+
+.timeline-content img{
+  width:100%;
+  margin-top:15px;
+  border-radius:6px;
+}
+
+/* 表示時 */
+.timeline-item.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
 /* インフォメーション */
 
 .info {
