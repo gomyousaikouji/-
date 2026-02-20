@@ -142,13 +142,13 @@ navbar {
 .wa-btn::before {
   content: "";
   position: absolute;
-  top: 12px;
+  top: 15px;
   left: 0;
   width: 100%;
   height: 100%;
   background: url("924668.jpg") no-repeat center/contain;
-  opacity: 0.15;
-  filter: blur(4px);
+  opacity: 0.18;
+  filter: blur(5px);
   z-index: 1;
 }
 
