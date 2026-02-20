@@ -145,6 +145,25 @@ navbar {
   display: block;
 }
 
+/* ロゴを背景にする */
+.wa-btn::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:url("924668.jpg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:70%;
+  opacity:0.08;
+  pointer-events:none;
+}
+
+.wa-btn span{
+  position:relative;
+  z-index:2;
+  font-size:18px;
+}
+  
 /* 円の中に文字 */
 
 
