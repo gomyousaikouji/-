@@ -179,48 +179,33 @@ navbar {
   transition: 0.3s ease;
 }
 
-/* ===== 年間行事タイムライン ===== */
-.annual-timeline{
-  position:relative;
-  padding:100px 20px;
+/* ======================
+   年間行事ページ
+====================== */
+
+body{
+  font-family: serif;
+  background:#f8f6f2;
+  margin:0;
 }
 
-/* ===== 背景イチョウ ===== */
-.annual-timeline{
-  position:relative;
-  padding:100px 20px;
-  background:#faf8f2;
-  overflow:hidden;
-}
-
-.annual-timeline::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background-image:url("https://www.transparenttextures.com/patterns/ginkgo.png");
-  opacity:0.05;  /* 薄く */
-  pointer-events:none;
-}
-
-/* ===== 見出し ===== */
-.timeline-heading{
+.page-title{
   text-align:center;
-  font-size:28px;
-  margin-bottom:80px;
-  letter-spacing:5px;
-  color:#36454F;
-  border-bottom:2px solid #e6c35c;
-  display:inline-block;
-  padding-bottom:10px;
+  margin:80px 0;
+  font-size:32px;
+  letter-spacing:4px;
 }
 
-/* ===== タイムライン縦線 ===== */
+
+/* ===== タイムライン ===== */
+
 .timeline{
   position:relative;
-  max-width:900px;
-  margin:0 auto;
+  width:80%;
+  margin:auto;
 }
 
+/* 中央線 */
 .timeline::before{
   content:"";
   position:absolute;
@@ -228,20 +213,20 @@ navbar {
   top:0;
   width:2px;
   height:100%;
-  background:#e6c35c;
+  background:#333;
 }
 
-/* ===== 各項目 ===== */
+
+/* ===== 各行事 ===== */
+
 .timeline-item{
   position:relative;
   width:50%;
   padding:40px;
-  opacity:0;
-  transform:translateY(60px);
-  transition:all 0.8s ease;
+  box-sizing:border-box;
 }
 
-/* 交互 */
+/* 左右交互 */
 .timeline-item:nth-child(odd){
   left:0;
   text-align:right;
@@ -251,47 +236,70 @@ navbar {
   left:50%;
 }
 
-/* 丸ポイント */
+
+/* 丸 */
 .timeline-item::before{
   content:"";
   position:absolute;
-  top:60px;
-  right:-8px;
-  width:16px;
-  height:16px;
-  background:#e6c35c;
+  top:50px;
+  right:-10px;
+  width:18px;
+  height:18px;
+  background:#fff;
+  border:3px solid #333;
   border-radius:50%;
 }
 
 .timeline-item:nth-child(even)::before{
-  left:-8px;
+  left:-10px;
 }
 
-/* 中身 */
-.timeline-content{
-  background:#ffffff;
-  padding:25px;
-  border-radius:8px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.05);
-}
 
-.timeline-content h3{
+/* 日付 */
+.timeline-date{
+  font-size:22px;
+  font-weight:bold;
   margin-bottom:10px;
-  color:#b7a94a;
 }
+
+
+/* 内容BOX */
+.timeline-content{
+  background:white;
+  padding:20px;
+  border-radius:8px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+/* ===== 写真 ===== */
 
 .timeline-content img{
   width:100%;
   margin-top:15px;
-  border-radius:6px;
+  border-radius:8px;
+  transition:all 0.5s ease;
 }
 
-/* 表示時 */
-.timeline-item.show{
+/* ホバー */
+.timeline-content img:hover{
+  transform:scale(1.05);
+  box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+
+/* ===== スクロールふわっと ===== */
+
+.fade-up{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 1s ease;
+}
+
+.fade-up.show{
   opacity:1;
   transform:translateY(0);
 }
-
 /* インフォメーション */
 
 .info {
