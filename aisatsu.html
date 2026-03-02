@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ご挨拶｜西光寺</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="menu">
+<ul>
+<li><a href="index.html">ホーム</a></li>
+<li><a href="aisatsu.html">ご挨拶</a></li>
+<li><a href="gyouji.html">年間行事</a></li>
+<li><a href="access.html">アクセス</a></li>
+</ul>
+</nav>
+
+
+<!-- ご挨拶 -->
+<section class="aisatsu fade-up">
+
+<h1>ご挨拶</h1>
+
+<p>
+ようこそ御名西光寺へ。<br>
+私たちは、いのちが思い通りにならない現実の中に生きています。老い、病、別れ——避けることのできない事実に出遇うとき、仏さまの教えが私たちを照らします。
+親鸞聖人が明らかにされた本願念仏の道は、「善い人になる道」ではなく、煩悩を抱えたままの私が救われていると知らされる道です。
+このお寺が、人生を静かに見つめる場となり、居場所となりますように。
+どうぞご縁を結んでいただければ幸いです。
+</p>
+
+</section>
+
+
+<!-- イチョウ -->
+<div class="ichou-area"></div>
+
+
+<script src="ichou.js"></script>
+
+<script>
+const fadeElements =
+document.querySelectorAll('.fade-up');
+
+const observer =
+new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+});
+
+fadeElements.forEach(el=>{
+observer.observe(el);
+});
+</script>
+
+</body>
+</html>
