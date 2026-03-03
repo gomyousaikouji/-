@@ -125,15 +125,20 @@ navbar {
 
 /* ボタン本体 */
 .wa-btn {
+  display: inline-block;
   position: relative;
   width: 190px;
-  text-decoration: none;
+  
+ background: none;
+ border: none;
+ padding: 0;
 }
 
 /* ロゴ画像 */
 .wa-btn img {
   width: 100%;
   display: block;
+  height:auto;
   position: relative;
   z-index: 2;
 }
@@ -146,7 +151,7 @@ navbar {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("924668.jpg") no-repeat center/contain;
+  background:url("924668.jpg") no-repeat center/contain;
   opacity: 0.18;
   filter: blur(5px);
   z-index: 1;
