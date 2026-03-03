@@ -7,7 +7,7 @@ function createLeaf(){
 const leaf =
 document.createElement("img");
 
-leaf.src="images/ichou.png";
+leaf.src="images/ichou.irasuto";
 leaf.classList.add("ichou");
 
 leaf.style.left=
