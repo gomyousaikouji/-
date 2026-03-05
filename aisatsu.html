@@ -50,44 +50,29 @@
 </nav>
 
 <!-- ご挨拶 -->
-<section class="aisatsu fade-up">
+<section class="greeting-area">
 
-<h1>ご挨拶</h1>
+<h1 class="fade-in">ご挨拶</h1>
+
+<div class="greeting-text fade-in">
 
 <p>
 ようこそ御名西光寺へ。<br>
-私たちは、いのちが思い通りにならない現実の中に生きています。老い、病、別れ——避けることのできない事実に出遇うとき、仏さまの教えが私たちを照らします。
+私たちは、いのちが思い通りにならない現実の中に生きています。<br>
+老い、病、別れ——避けることのできない事実に出遇うとき、仏さまの教えが私たちを照らします。<br>
 親鸞聖人が明らかにされた本願念仏の道は、「善い人になる道」ではなく、煩悩を抱えたままの私が救われていると知らされる道です。
-このお寺が、人生を静かに見つめる場となり、居場所となりますように。
+このお寺が、人生を静かに見つめる場となり、居場所となりますように。<br>
 どうぞご縁を結んでいただければ幸いです。
 </p>
 
-</section>
-
+</div>
 
 <!-- イチョウ -->
-<div class="ichou-area"></div>
+<div class="ginkgo-container"></div>
 
+</section>
 
 <script src="ichou.js"></script>
-
-<script>
-const fadeElements =
-document.querySelectorAll('.fade-up');
-
-const observer =
-new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add('show');
-}
-});
-});
-
-fadeElements.forEach(el=>{
-observer.observe(el);
-});
-</script>
 
 </body>
 </html>
