@@ -369,7 +369,7 @@ body{
 .info-title::after{
   content:"＋";
   margin-left:8px;
-  font-size:14px;
+  font-size:40px;
   color:#8a8476;
   transition:0.3s;
 }
