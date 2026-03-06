@@ -355,12 +355,12 @@ body{
 }
 
 .info-date{
-  font-size:14px;
+  font-size:20px;
   color:#8a8476;
 }
 
 .info-title{
-  font-size:16px;
+  font-size:40px;
   color:#36454F;
   position:relative;
 }
@@ -369,7 +369,7 @@ body{
 .info-title::after{
   content:"＋";
   margin-left:8px;
-  font-size:40px;
+  font-size:16px;
   color:#8a8476;
   transition:0.3s;
 }
@@ -379,7 +379,7 @@ body{
   max-height:0;
   overflow:hidden;
   transition:all 0.4s ease;
-  font-size:14px;
+  font-size:20px;
   line-height:1.9;
   color:#555;
   padding-left:80px;
@@ -604,7 +604,7 @@ text-decoration:underline;
 
 .footer-address p {
   margin: 2px 0;       /* 行間コンパクト */
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .footer-title {
@@ -616,11 +616,11 @@ text-decoration:underline;
 }
 
 .mountain {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .temple {
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .footer-sns {
