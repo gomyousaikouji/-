@@ -444,6 +444,55 @@ color:#777;
 letter-spacing:3px;
 }
 
+
+/* アクセスページ */
+
+.access-section{
+text-align:center;
+padding:100px 20px;
+}
+
+.page-title{
+font-size:34px;
+margin-bottom:60px;
+letter-spacing:0.2em;
+}
+
+/* Google Map */
+
+.map-area{
+max-width:900px;
+margin:0 auto 60px;
+}
+
+/* アクセス方法画像 */
+
+.access-guide{
+max-width:700px;
+margin:0 auto 60px;
+}
+
+.access-guide img{
+width:100%;
+height:auto;
+border-radius:6px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* 住所 */
+
+.access-info{
+font-size:18px;
+line-height:2;
+}
+
+.access-info .tel{
+font-size:20px;
+font-weight:bold;
+margin-top:10px;
+}
+
+
 .contact-section{
 display:flex;
 justify-content:center;
