@@ -305,6 +305,97 @@ body{
   opacity:1;
   transform:translateY(0);
 }
+
+/* ページタイトル */
+
+.page-header{
+text-align:center;
+padding:100px 20px 60px;
+}
+
+.page-header h1{
+font-size:34px;
+letter-spacing:0.2em;
+margin-bottom:10px;
+}
+
+.page-header p{
+color:#888;
+}
+
+
+/* 日常勤行エリア */
+
+.service-area{
+width:100%;
+}
+
+
+/* 各ブロック */
+
+.service-item{
+padding:100px 20px;
+}
+
+
+/* 背景交互 */
+
+.service-item:nth-child(odd){
+background:#f7f7f7;
+}
+
+.service-item:nth-child(even){
+background:#ffffff;
+}
+
+
+/* タイトル */
+
+.service-title{
+text-align:center;
+font-size:30px;
+letter-spacing:0.15em;
+margin-bottom:40px;
+}
+
+
+/* 写真＋説明 */
+
+.service-content{
+max-width:1000px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+}
+
+
+/* 偶数だけ左右反転 */
+
+.service-item:nth-child(even) .service-content{
+flex-direction:row-reverse;
+}
+
+
+/* 写真 */
+
+.service-img img{
+width:400px;
+border-radius:6px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+
+/* 説明 */
+
+.service-text{
+max-width:400px;
+line-height:2;
+font-size:17px;
+color:#444;
+}
+
 /* インフォメーション */
 
 .info {
