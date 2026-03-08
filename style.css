@@ -396,6 +396,71 @@ font-size:17px;
 color:#444;
 }
 
+.attention{
+padding:80px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.attention-main{
+text-align:center;
+font-size:30px;
+margin-bottom:80px;
+}
+
+.block{
+margin-bottom:120px;
+}
+
+.seijin{
+text-align:right;
+}
+
+.attention-title{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.slider{
+position:relative;
+width:70%;
+height:350px;
+}
+
+.seijin .slider{
+margin-left:auto;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+
+opacity:0;
+transition:opacity 1.5s;
+
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.slide.active{
+opacity:1;
+}
+
+.slider-text{
+margin-top:20px;
+font-size:15px;
+line-height:1.8;
+max-width:600px;
+}
+
+.seijin .slider-text{
+margin-left:auto;
+}
+
+
+
 /* インフォメーション */
 
 .info {
