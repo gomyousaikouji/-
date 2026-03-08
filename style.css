@@ -977,3 +977,38 @@ opacity:0;
 }
 
 
+/* スマホ調整 */
+@media screen and (max-width:768px){
+
+body{
+overflow-x:hidden;
+}
+
+.container{
+width:100%;
+padding:0 15px;
+}
+
+img{
+max-width:100%;
+height:auto;
+}
+
+/* 横並びを縦に */
+.flex,
+.row,
+.grid{
+flex-direction:column;
+}
+
+/* ナビ */
+nav ul{
+flex-direction:column;
+}
+
+/* ギャラリー */
+.gallery{
+grid-template-columns:1fr;
+}
+
+}
