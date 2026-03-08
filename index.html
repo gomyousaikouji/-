@@ -120,6 +120,53 @@ document.querySelectorAll('.info-header').forEach(item=>{
  
 </section>
 
+
+<section class="attention">
+
+<h2 class="attention-main">attention</h2>
+
+
+<!-- 結婚式前撮り -->
+<div class="block wedding">
+
+<h3 class="attention-title">結婚式前撮り</h3>
+
+<div class="slider slider-left">
+<img src="images/wedding1.jpg" class="slide active">
+<img src="images/wedding2.jpg" class="slide">
+<img src="images/wedding3.jpg" class="slide">
+</div>
+
+<p class="slider-text">
+境内や本堂での前撮り撮影を行っております。
+和装に合う落ち着いた雰囲気の中で特別な一枚を残していただけます。
+</p>
+
+</div>
+
+
+
+<!-- 成人式前撮り -->
+<div class="block seijin">
+
+<h3 class="attention-title">成人式前撮り</h3>
+
+<div class="slider slider-right">
+<img src="images/seijin1.jpg" class="slide active">
+<img src="images/seijin2.jpg" class="slide">
+<img src="images/seijin3.jpg" class="slide">
+</div>
+
+<p class="slider-text">
+四季折々の境内で成人式の前撮り撮影ができます。
+振袖姿の晴れの日を美しい景色とともに残していただけます。
+</p>
+
+</div>
+
+</section>
+  
+
 <section class="active-gallery">
 
 <h2 class="gallery-title">Active Gallery</h2>
@@ -282,6 +329,52 @@ document.querySelectorAll(".more-btn").forEach(button=>{
     }
   });
 });
+
+
+// 結婚式（→方向）
+document.querySelectorAll(".slider-left").forEach(slider => {
+
+const slides = slider.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(()=>{
+
+slides[index].classList.remove("active");
+
+index++;
+if(index >= slides.length){
+index = 0;
+}
+
+slides[index].classList.add("active");
+
+},3500);
+
+});
+
+
+// 成人式（←方向）
+document.querySelectorAll(".slider-right").forEach(slider => {
+
+const slides = slider.querySelectorAll(".slide");
+let index = slides.length - 1;
+
+setInterval(()=>{
+
+slides[index].classList.remove("active");
+
+index--;
+if(index < 0){
+index = slides.length - 1;
+}
+
+slides[index].classList.add("active");
+
+},3500);
+
+});
+
+  
 </script>  
   
 </body>
