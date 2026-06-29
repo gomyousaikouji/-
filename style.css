@@ -243,6 +243,7 @@ body{
   position:absolute;
   left:50%;
   top:0;
+  height:auto;
   width:2px;
  bottom:0;
   background:#333;
