@@ -212,6 +212,60 @@ navbar {
 }
 
 /* ======================
+   挨拶ページ
+====================== */
+.greeting{
+    max-width:1100px;
+    margin:80px auto;
+    padding:0 30px;
+}
+
+.greeting h1{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.greeting-box{
+    display:flex;
+    gap:60px;
+    align-items:flex-start;
+}
+
+.greeting-image{
+    flex:1;
+}
+
+.greeting-image img{
+    width:100%;
+    border-radius:8px;
+}
+
+.greeting-text{
+    flex:1.2;
+}
+
+.greeting-text h2{
+    margin-bottom:25px;
+}
+
+.greeting-text p{
+    line-height:2;
+}
+
+@media (max-width:768px){
+
+.greeting-box{
+    flex-direction:column;
+}
+
+.greeting-image,
+.greeting-text{
+    width:100%;
+}
+
+}
+
+/* ======================
    年間行事ページ
 ====================== */
 
