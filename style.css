@@ -1211,6 +1211,12 @@ text-decoration:underline;
   padding:40px;
   text-align:center;
   line-height:2;
+  min-height:320px;
+  box-size:border-box;
+}
+
+.comment div{
+  width:100%;
 }
 
 .charcoal{
