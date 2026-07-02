@@ -580,6 +580,10 @@ margin-left:auto;
   letter-spacing: 3px;
 }
 
+.attention-main{
+  text-align: center;
+}
+
 /* 各お知らせ */
 .info-item {
   border-bottom: 1px solid #ddd;
@@ -658,7 +662,7 @@ margin-left:auto;
 
 /* ボタン全体 */
 .info-button-wrap{
-  text-align:center;
+  text-align: center;
   margin:40px 0;
 }
 
