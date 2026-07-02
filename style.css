@@ -252,6 +252,26 @@ navbar {
     line-height:2;
 }
 
+.signature{
+    text-align:right;
+    margin-top:60px;   /* 挨拶文との間隔 */
+    line-height:2;
+}
+
+.signature p{
+    margin:0;
+}
+
+
+.signature p:first-child{
+    font-size:16px;
+}
+
+.signature p:last-child{
+    font-size:24px;
+    letter-spacing:0.2em;
+    margin-top:8px;
+}
 @media (max-width:768px){
 
 .greeting-box{
