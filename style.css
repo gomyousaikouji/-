@@ -688,6 +688,189 @@ margin-left:auto;
   transition:.3s;
 }
 
+/* ===== 施設案内 ===== */
+
+.facility{
+
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+
+}
+
+
+/* 航空写真 */
+
+.facility-main{
+
+    position:relative;
+    margin-bottom:50px;
+
+}
+
+.facility-main img{
+
+    width:100%;
+    display:block;
+    border-radius:15px;
+
+}
+
+
+.facility-label{
+
+    position:absolute;
+
+    top:25px;
+    left:25px;
+
+    width:120px;
+    height:120px;
+
+    background:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    font-size:24px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+}
+
+
+
+/* 一覧 */
+
+.facility-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+
+/* パソコン */
+
+@media(min-width:900px){
+
+.facility-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+
+/* カード */
+
+.facility-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    color:white;
+
+}
+
+
+.facility-card img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s;
+
+}
+
+
+/* 施設名 */
+
+.facility-name{
+
+    position:absolute;
+
+    top:15px;
+    left:15px;
+
+    width:90px;
+    height:90px;
+
+    background:white;
+
+    color:#333;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    font-size:22px;
+
+    z-index:3;
+
+}
+
+
+/* 説明 */
+
+.facility-overlay{
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    background:rgba(0,0,0,.65);
+
+    padding:20px;
+
+    opacity:0;
+
+    transition:.4s;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+
+/* ホバー */
+
+.facility-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+.facility-card:hover .facility-overlay{
+
+    opacity:1;
+
+}
+
+
+
 /* お問い合わせページ */
 
 .sub-hero{
