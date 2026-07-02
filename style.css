@@ -804,6 +804,100 @@ text-decoration:none;
 text-decoration:underline;
 }
 
+.contact-wrapper{
+    width:80%;
+    max-width:900px;
+    margin:60px auto;
+}
+
+.form-group{
+    margin-bottom:30px;
+}
+
+.form-group label{
+    display:block;
+    font-size:18px;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+.form-group textarea{
+    resize:vertical;
+}
+
+.contact-btn{
+    width:220px;
+    padding:15px;
+    display:block;
+    margin:40px auto;
+    background:#b48a3b;   /* 山吹色 */
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-btn:hover{
+    opacity:0.85;
+}
+
+.gold-line{
+    border:none;
+    border-top:2px solid #b48a3b;
+    margin:60px 0;
+}
+
+.contact-phone{
+    text-align:center;
+}
+
+.contact-phone h3{
+    margin-bottom:20px;
+}
+
+.contact-phone a{
+    color:#333;
+    font-size:24px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.sns-area{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    margin-top:40px;
+}
+
+.sns-area a{
+    text-align:center;
+    text-decoration:none;
+    color:#333;
+}
+
+.sns-area img{
+    width:70px;
+    height:70px;
+    transition:.3s;
+}
+
+.sns-area img:hover{
+    transform:scale(1.1);
+}
+
+
 /* イチョウ模様 */
 .temple-btn::before{
   content:"";
