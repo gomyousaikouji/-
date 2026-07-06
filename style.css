@@ -723,8 +723,9 @@ font-size:26px;
 
 /* ボタン全体 */
 .info-button-wrap{
-  text-align: center;
-  margin:40px 0;
+  display: flex;
+  justify-content: center;
+  margin:50px 0;
 }
 
 /* 和風六角ボタン */
@@ -1269,7 +1270,8 @@ text-decoration:underline;
 .gallery-row{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  margin-bottom:20px;
+  max-width:1000px;
+  margin:0 auto 20px;
 }
 
 .photo{
@@ -1283,15 +1285,16 @@ text-decoration:underline;
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:40px;
+  padding:25px;
   text-align:center;
   line-height:2;
   min-height:320px;
-  box-size:border-box;
+  overflow:hidden;
 }
 
 .comment div{
   width:100%;
+  max-width:220px;
 }
 
 .charcoal{
@@ -1314,13 +1317,15 @@ text-decoration:underline;
 }
 
 .more-btn{
-  margin-top:30px;
-  padding:12px 30px;
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 24px;
   border:1px solid currentColor;
   background:transparent;
   cursor:pointer;
-  letter-spacing:2px;
-  transition:0.3s;
+  letter-spacing:1px;
+  writing-mode:horizontal-tb;
+  white-space:nowrap;
 }
 
 .more-btn:hover{
