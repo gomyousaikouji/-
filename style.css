@@ -952,25 +952,25 @@ letter-spacing:3px;
 }
 
 .contact-container{
-    max-width:1200px;
+    max-width:1300px;
     margin:80px auto;
     padding:0 20px;
     display:flex;
-    gap:60px;
+    gap:70px;
     align-items:flex-start;
 }
 
 /* 左写真 */
 
 .contact-images{
-    flex:1;
+    flex:3.5;
     column-count:2;
-    column-gap:15px;
+    column-gap:12px;
 }
 
 .contact-images img{
     width:100%;
-    margin-bottom:15px;
+    margin-bottom:12px;
     border-radius:12px;
     display:block;
     transition:.4s;
@@ -983,7 +983,23 @@ letter-spacing:3px;
 /* 右フォーム */
 
 .contact-form{
-    flex:1;
+    flex:6.5;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:18px;
+  font-size:17px;
+  border-radius:10px;
+}
+
+.sent-btn{
+  width:100%;
+  padding:18px;
+  font-size:18px;
+  border-radius:10px;
+  margin-top:35px;
 }
 
 /* スマホ */
