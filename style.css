@@ -1001,6 +1001,12 @@ letter-spacing:3px;
 
 }
 
+.contact-bottom{
+  margin-top:60px;
+  padding-top:50px;
+  border-top:2px solid #c9a227;
+  text-align:center;
+
 /* アクセスページ */
 
 .access-section{
