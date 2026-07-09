@@ -637,10 +637,7 @@ font-size:26px;
 
 .info h2 {
   text-align: center;
-  margin-bottom: 50px;
   font-size: 40px;
-  font-weight: 300;
-  letter-spacing: 3px;
   font-family:"Shippori Mincho B1" , serif;
 }
 
@@ -1294,7 +1291,7 @@ text-decoration:underline;
 
 .comment div{
   width:100%;
-  max-width:220px;
+  max-width:100px;
 }
 
 .charcoal{
