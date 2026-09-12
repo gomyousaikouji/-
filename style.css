@@ -504,6 +504,12 @@ max-width:900px;
 margin:0 auto;
 }
 
+.attention h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family:"Shippori Mincho B1" , serif;
+}
+
 .attention-main{
 text-align:center;
 font-size:28px;
