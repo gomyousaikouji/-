@@ -498,139 +498,283 @@ font-size:28px;
 color:#444;
 }
 
-.attention{
-width:100%;
-padding:100px 0 0;
-margin:0;
-}
+/* =========================
+   attention
+========================= */
 
-.attention h2 {
-  text-align: center;
-  font-size: 40px;
-  font-family:"Shippori Mincho B1" , serif;
+.attention{
+  max-width: none;
+  margin: 0;
+  padding: 0 0 80px;
+  background:#fff;
 }
 
 .attention-main{
-text-align:center;
-font-size:34px;
-font-family:"Shippori Mincho B1", serif;
-letter-spacing:4px;
-margin-bottom:80px;
+  text-align:center;
+  font-size:28px;
+  letter-spacing:.12em;
+  margin:0;
+  padding:80px 20px 45px;
+  font-family:serif;
 }
 
-.block{
-margin-bottom:120px;
-}
 
-.wedding{
-text-align:left;
-}
+/* =========================
+   前撮りエリア
+========================= */
 
-.seijin{
-text-align:right;
+.photo-area{
+  width:100%;
 }
 
 .photo-slider{
-width:100%;
-padding:0;
-margin:0 0 100px;
-background:#fff;
-
+  padding:0;
+  margin:0;
+  background:#fff;
 }
 
-.photo-slider h2{
-text-align:center;
-font-family:"Shippori Mincho B1", serif;
-font-size:32px;
-margin:50px;
-padding:50px 20px 35px;
-letter-spacing:5px;
-
+.photo-slider + .photo-slider{
+  margin-top:0;
 }
 
 
+/* スライダー */
 
 .swiper{
-
-width:90%;
-
-padding-bottom:50px;
-
+  width:100%;
+  padding:0;
 }
-
-
 
 .swiper-slide{
-
-transition:.4s;
-
-transform:scale(.8);
-
-opacity:.5;
-
+  position:relative;
+  width:100%;
+  height:520px;
+  overflow:hidden;
+  transition:.4s;
+  transform:none;
+  opacity:1;
 }
-
-
-
-.swiper-slide-active{
-
-transform:scale(1);
-
-opacity:1;
-
-}
-
-
 
 .swiper-slide img{
-
-width:100%;
-
-height:450px;
-
-object-fit:cover;
-
-border-radius:15px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.2);
-
+  display:block;
+  width:100%;
+  height:520px;
+  object-fit:cover;
+  border-radius:0;
+  box-shadow:none;
 }
 
 
+/* 写真の上の文字 */
 
-.swiper-slide-active img{
+.photo-copy{
+  position:absolute;
+  left:9%;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:5;
+  color:#fff;
+  text-shadow:0 2px 12px rgba(0,0,0,.35);
+}
 
-box-shadow:0 20px 40px rgba(0,0,0,.35);
+.photo-copy span{
+  display:block;
+  font-size:12px;
+  letter-spacing:.28em;
+  margin-bottom:22px;
+}
 
+.photo-copy h2{
+  font-size:32px;
+  line-height:1.7;
+  font-weight:400;
+  letter-spacing:.12em;
+  margin:0 0 20px;
+}
+
+.photo-copy p{
+  font-size:14px;
+  line-height:2.1;
+  letter-spacing:.08em;
+  margin:0;
 }
 
 
+/* 左右の矢印 */
 
 .swiper-button-next,
-
 .swiper-button-prev{
+  color:#fff;
+  width:45px;
+  height:45px;
+}
 
-color:#b38b2d;
-
+.swiper-button-next:after,
+.swiper-button-prev:after{
+  font-size:28px;
+  font-weight:300;
 }
 
 
+/* =========================
+   個別納骨墓
+========================= */
+
+.ossuary{
+  margin-top:80px;
+  background:#f8f6f0;
+}
+
+.ossuary-inner{
+  display:flex;
+  align-items:stretch;
+  min-height:380px;
+}
+
+.ossuary-text{
+  width:50%;
+  padding:70px 7%;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.ossuary-label{
+  color:#b38b2d;
+  font-size:12px;
+  letter-spacing:.25em;
+  margin-bottom:18px;
+}
+
+.ossuary-text h2{
+  font-family:serif;
+  font-size:32px;
+  font-weight:400;
+  letter-spacing:.12em;
+  margin:0 0 22px;
+}
+
+.ossuary-text h3{
+  font-family:serif;
+  font-size:20px;
+  font-weight:400;
+  letter-spacing:.1em;
+  margin:0 0 20px;
+}
+
+.ossuary-text p{
+  font-size:13px;
+  line-height:2;
+  letter-spacing:.08em;
+  margin:0 0 25px;
+}
+
+.ossuary-btn{
+  width:150px;
+  padding:13px 20px;
+  box-sizing:border-box;
+  background:#b49a5b;
+  color:#fff;
+  text-decoration:none;
+  text-align:center;
+  font-size:13px;
+  letter-spacing:.12em;
+}
+
+.ossuary-btn span{
+  margin-left:15px;
+  font-size:18px;
+}
+
+.ossuary-image{
+  width:50%;
+}
+
+.ossuary-image img{
+  width:100%;
+  height:100%;
+  min-height:380px;
+  object-fit:cover;
+  display:block;
+}
+
+
+/* =========================
+   スマホ
+========================= */
 
 @media(max-width:768px){
 
-.swiper-slide img{
+  .attention-main{
+    font-size:25px;
+    padding:60px 20px 35px;
+  }
 
-height:260px;
+  .swiper-slide{
+    height:430px;
+  }
 
-}
+  .swiper-slide img{
+    height:430px;
+  }
 
-.photo-slider h2{
+  .photo-copy{
+    left:9%;
+    right:8%;
+  }
 
-font-size:26px;
+  .photo-copy span{
+    font-size:9px;
+    letter-spacing:.22em;
+    margin-bottom:15px;
+  }
 
-}
+  .photo-copy h2{
+    font-size:25px;
+    line-height:1.65;
+    margin-bottom:15px;
+  }
 
-}
+  .photo-copy p{
+    font-size:11px;
+    line-height:1.9;
+  }
+
+  .ossuary{
+    margin-top:60px;
+  }
+
+  .ossuary-inner{
+    display:block;
+  }
+
+  .ossuary-text{
+    width:100%;
+    padding:55px 9%;
+  }
+
+  .ossuary-text h2{
+    font-size:27px;
+  }
+
+  .ossuary-text h3{
+    font-size:18px;
+  }
+
+  .ossuary-text p{
+    font-size:12px;
+  }
+
+  .ossuary-image{
+    width:100%;
+    height:300px;
+  }
+
+  .ossuary-image img{
+    min-height:300px;
+    height:300px;
+  }
 
 
 /* インフォメーション */
