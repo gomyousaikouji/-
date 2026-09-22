@@ -1088,344 +1088,7 @@ grid-template-columns:repeat(3,1fr);
 
 }
 
-
-/* =========================
-   お問い合わせページ
-========================= */
-
-.sub-hero{
-  text-align:center;
-  padding:90px 20px 70px;
-  background:url("images/washi.jpg") center/cover;
-}
-
-.sub-hero h1{
-  font-family:"Shippori Mincho B1", serif;
-  font-size:36px;
-  font-weight:400;
-  letter-spacing:5px;
-  margin-bottom:12px;
-}
-
-.sub-hero p{
-  font-size:13px;
-  color:#777;
-  letter-spacing:3px;
-}
-
-
-/* =========================
-   お問い合わせメイン
-========================= */
-
-.contact-container{
-  max-width:1100px;
-  margin:80px auto;
-  padding:0 30px;
-  display:flex;
-  gap:70px;
-  align-items:flex-start;
-}
-
-
-/* 左側：写真 */
-
-.contact-images{
-  flex:1;
-  column-count:2;
-  column-gap:14px;
-}
-
-.contact-images img{
-  width:100%;
-  margin-bottom:14px;
-  border-radius:6px;
-  display:block;
-  transition:.4s;
-}
-
-.contact-images img:hover{
-  transform:scale(1.03);
-}
-
-
-/* =========================
-   右側：お問い合わせ
-========================= */
-
-.contact-form{
-  flex:1;
-}
-
-.contact-form h2{
-  font-family:"Shippori Mincho B1", serif;
-  font-size:28px;
-  font-weight:400;
-  letter-spacing:.12em;
-  margin-bottom:35px;
-}
-
-
-/* 入力欄 */
-
-.contact-form input,
-.contact-form textarea{
-  width:100%;
-  padding:15px 16px;
-  font-family:inherit;
-  font-size:15px;
-  background:#fff;
-  border:1px solid #d8d2c4;
-  border-radius:3px;
-  outline:none;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus{
-  border-color:#b48a3b;
-}
-
-.contact-form textarea{
-  min-height:180px;
-  resize:vertical;
-}
-
-
-/* 送信ボタン */
-
-.sent-btn{
-  width:100%;
-  padding:15px;
-  margin-top:30px;
-  border:none;
-  background:#b48a3b;
-  color:#fff;
-  font-family:inherit;
-  font-size:15px;
-  letter-spacing:.15em;
-  cursor:pointer;
-  transition:.3s;
-}
-
-.sent-btn:hover{
-  opacity:.8;
-}
-
-
-/* =========================
-   電話・SNS
-========================= */
-
-.contact-bottom{
-  max-width:900px;
-  margin:80px auto 0;
-  padding:60px 20px 0;
-  border-top:1px solid #c9a227;
-  text-align:center;
-}
-
-.contact-bottom h3{
-  font-family:"Shippori Mincho B1", serif;
-  font-size:20px;
-  font-weight:400;
-  letter-spacing:.12em;
-  margin-bottom:20px;
-}
-
-.contact-phone{
-  text-align:center;
-}
-
-.contact-phone a{
-  color:#333;
-  font-size:24px;
-  text-decoration:none;
-  letter-spacing:.08em;
-}
-
-.sns-area{
-  display:flex;
-  justify-content:center;
-  gap:60px;
-  margin-top:35px;
-}
-
-.sns-area a{
-  text-align:center;
-  text-decoration:none;
-  color:#333;
-}
-
-.sns-area img{
-  width:55px;
-  height:55px;
-  object-fit:contain;
-  transition:.3s;
-}
-
-.sns-area img:hover{
-  transform:scale(1.08);
-}
-
-
-/* =========================
-   お問い合わせフォーム型の場合
-========================= */
-
-.contact-section{
-  display:flex;
-  justify-content:center;
-  padding:80px 20px;
-}
-
-.contact-box{
-  background:#fff;
-  padding:50px 60px;
-  border-radius:4px;
-  box-shadow:0 8px 30px rgba(0,0,0,.08);
-  max-width:700px;
-  width:100%;
-}
-
-.contact-box h2{
-  text-align:center;
-  margin-bottom:40px;
-  font-family:"Shippori Mincho B1", serif;
-  font-size:26px;
-  font-weight:400;
-  letter-spacing:.12em;
-}
-
-.contact-item{
-  margin-bottom:25px;
-  border-bottom:1px solid #e8e4dc;
-  padding-bottom:15px;
-}
-
-.contact-item span{
-  font-size:12px;
-  color:#888;
-  letter-spacing:2px;
-}
-
-.contact-item p{
-  font-size:17px;
-  margin-top:5px;
-}
-
-.contact-item a{
-  color:#b48a3b;
-  text-decoration:none;
-}
-
-
-/* =========================
-   フォーム
-========================= */
-
-.contact-wrapper{
-  width:80%;
-  max-width:900px;
-  margin:60px auto;
-}
-
-.form-group{
-  margin-bottom:28px;
-}
-
-.form-group label{
-  display:block;
-  font-size:15px;
-  margin-bottom:9px;
-  font-weight:normal;
-  letter-spacing:.08em;
-}
-
-.form-group input,
-.form-group textarea{
-  width:100%;
-  padding:14px;
-  border:1px solid #d8d2c4;
-  border-radius:3px;
-  font-family:inherit;
-  font-size:15px;
-  box-sizing:border-box;
-  background:#fff;
-}
-
-.form-group textarea{
-  resize:vertical;
-  min-height:180px;
-}
-
-.contact-btn{
-  width:220px;
-  padding:14px;
-  display:block;
-  margin:40px auto;
-  background:#b48a3b;
-  color:#fff;
-  border:none;
-  border-radius:0;
-  font-family:inherit;
-  font-size:15px;
-  letter-spacing:.12em;
-  cursor:pointer;
-  transition:.3s;
-}
-
-.contact-btn:hover{
-  opacity:.8;
-}
-
-
-/* =========================
-   スマホ
-========================= */
-
-@media(max-width:768px){
-
-  .sub-hero{
-    padding:65px 20px 50px;
-  }
-
-  .sub-hero h1{
-    font-size:29px;
-  }
-
-  .contact-container{
-    display:block;
-    margin:50px auto;
-    padding:0 20px;
-  }
-
-  .contact-images{
-    column-count:2;
-    margin-bottom:45px;
-  }
-
-  .contact-form h2{
-    font-size:24px;
-  }
-
-  .contact-bottom{
-    margin-top:60px;
-    padding-top:40px;
-  }
-
-  .sns-area{
-    gap:40px;
-  }
-
-  .contact-box{
-    padding:40px 25px;
-  }
-
-  .contact-wrapper{
-    width:90%;
-  }
-}
-
+  
 /* イチョウ模様 */
 .temple-btn::before{
   content:"";
@@ -1722,5 +1385,246 @@ flex-direction:column;
 .gallery{
 grid-template-columns:1fr;
 }
+
+}
+
+
+/* =================================
+   お問い合わせページ
+================================= */
+
+.contact-hero{
+  text-align:center;
+  padding:80px 20px 65px;
+  background:url("images/washi.jpg") center/cover;
+}
+
+.contact-hero h1{
+  font-family:"Shippori Mincho B1",serif;
+  font-size:36px;
+  font-weight:400;
+  letter-spacing:5px;
+  margin:0 0 10px;
+}
+
+.contact-hero p{
+  font-size:13px;
+  color:#777;
+  letter-spacing:3px;
+  margin:0;
+}
+
+
+/* メイン */
+.contact-page{
+  padding:80px 0 100px;
+}
+
+.contact-container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 30px;
+  display:flex;
+  gap:70px;
+  align-items:flex-start;
+}
+
+
+/* 左：写真 */
+.contact-images{
+  flex:1;
+  column-count:2;
+  column-gap:14px;
+}
+
+.contact-images img{
+  width:100%;
+  height:auto;
+  margin:0 0 14px;
+  border-radius:6px;
+  display:block;
+  break-inside:avoid;
+  transition:.3s;
+}
+
+.contact-images img:hover{
+  transform:scale(1.02);
+}
+
+
+/* 右：フォーム */
+.contact-form{
+  flex:1;
+}
+
+.contact-form h2{
+  font-family:"Shippori Mincho B1",serif;
+  font-size:28px;
+  font-weight:400;
+  letter-spacing:.12em;
+  margin:0 0 35px;
+}
+
+.form-group{
+  margin-bottom:25px;
+}
+
+.form-group label{
+  display:block;
+  font-size:14px;
+  margin-bottom:8px;
+  letter-spacing:.08em;
+}
+
+.form-group input,
+.form-group textarea{
+  width:100%;
+  padding:14px 16px;
+  border:1px solid #d8d2c4;
+  border-radius:3px;
+  background:#fff;
+  font-family:inherit;
+  font-size:15px;
+  box-sizing:border-box;
+  outline:none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+  border-color:#b48a3b;
+}
+
+.form-group textarea{
+  min-height:180px;
+  resize:vertical;
+}
+
+
+/* 送信ボタン */
+.contact-btn{
+  width:220px;
+  padding:14px;
+  display:block;
+  margin:35px auto 0;
+  background:#b48a3b;
+  color:#fff;
+  border:none;
+  border-radius:0;
+  font-family:inherit;
+  font-size:15px;
+  letter-spacing:.12em;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.contact-btn:hover{
+  opacity:.8;
+}
+
+
+/* 電話・SNS */
+.contact-info{
+  max-width:900px;
+  margin:0 auto;
+  padding:70px 20px 0;
+  border-top:1px solid #c9a227;
+  text-align:center;
+}
+
+.contact-phone h3{
+  font-family:"Shippori Mincho B1",serif;
+  font-size:20px;
+  font-weight:400;
+  letter-spacing:.12em;
+  margin:0 0 20px;
+}
+
+.contact-phone a{
+  color:#333;
+  font-size:24px;
+  text-decoration:none;
+  letter-spacing:.08em;
+}
+
+
+/* SNS */
+.sns-area{
+  display:flex;
+  justify-content:center;
+  gap:60px;
+  margin-top:45px;
+}
+
+.sns-area a{
+  text-align:center;
+  text-decoration:none;
+  color:#333;
+}
+
+.sns-area img{
+  width:55px;
+  height:55px;
+  object-fit:contain;
+  margin:0 auto 8px;
+  transition:.3s;
+}
+
+.sns-area img:hover{
+  transform:scale(1.08);
+}
+
+.sns-area p{
+  margin:0;
+  font-size:13px;
+  letter-spacing:.08em;
+}
+
+
+/* スマホ */
+@media(max-width:768px){
+
+  .contact-hero{
+    padding:65px 20px 50px;
+  }
+
+  .contact-hero h1{
+    font-size:29px;
+  }
+
+  .contact-page{
+    padding:50px 0 70px;
+  }
+
+  .contact-container{
+    display:block;
+    padding:0 20px;
+  }
+
+  .contact-images{
+    column-count:2;
+    column-gap:10px;
+    margin-bottom:45px;
+  }
+
+  .contact-images img{
+    margin-bottom:10px;
+  }
+
+  .contact-form h2{
+    font-size:24px;
+  }
+
+  .contact-info{
+    margin:0 20px;
+    padding-top:45px;
+  }
+
+  .contact-phone a{
+    font-size:21px;
+  }
+
+  .sns-area{
+    gap:40px;
+  }
 
 }
