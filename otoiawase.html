@@ -1,65 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=1200">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>お問い合わせ｜西光寺</title>
 
 <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-  <header class="header">
-
-   <!-- 背景スライド -->
-  <div class="bg-slideshow">
-    <img src="images/IMG_9242.JPG" class="active">
-    <img src="images/IMG_4097.JPG">
-    <img src="images/IMG_4102.JPG"> 
-    <img src="images/IMG_3938.jpeg">
-  </div>
-    
-  <!-- タイトル -->
-  <div class="hero-text">
-
-  <p class="sect">浄土真宗本願寺派</p>
-
-  <h1 class="temple-title">
-    <span class="mountain">攝刕山</span>
-    西光寺
-  </h1>
-
-  <p class="romaji">SAIKOJI</p>
-
-</div> 
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
-  
-</header>
-  
-<main>
 
-<nav class="navbar">
-  <ul>
-    <li><a href="index.html">ホーム</a></li>
-    <li><a href="aisatsu.html">ご挨拶</a></li>
-    <li><a href="#">西光寺について</a></li>
-    <li><a href="access.html">アクセス</a></li>
-    <li><a href="otoiawase.html">お問い合わせ</a></li>
-  </ul>
-</nav>
 
 <style>
+
 /* =====================================
-   お問い合わせページ専用
+   お問い合わせページ
 ===================================== */
 
 .contact-page{
   background:#fff;
-  padding-bottom:100px;
+  padding-bottom:80px;
 }
 
 
-/* ページタイトル */
+/* =====================================
+   ページタイトル
+===================================== */
 
 .contact-hero{
   text-align:center;
@@ -85,7 +53,7 @@
 }
 
 
-/* 小さな飾り */
+/* 飾り */
 
 .contact-decoration{
   width:40px;
@@ -135,9 +103,11 @@
   max-width:970px;
   margin:0 auto;
   padding:0 20px;
+
   display:grid;
   grid-template-columns:430px 1fr;
   gap:45px;
+
   align-items:start;
 }
 
@@ -152,10 +122,15 @@
 .contact-images img{
   width:100%;
   height:auto;
+
   display:block;
+
   margin:0 0 10px;
+
   border-radius:6px;
+
   break-inside:avoid;
+
   box-shadow:0 1px 5px rgba(0,0,0,.08);
 }
 
@@ -177,39 +152,63 @@
   display:flex;
   align-items:center;
   gap:10px;
+
   font-family:"Shippori Mincho B1", serif;
   font-size:14px;
   font-weight:600;
+
   letter-spacing:.08em;
+
   color:#333;
+
   margin-bottom:9px;
 }
 
+
+/* 必須 */
+
 .required{
   display:inline-block;
+
   background:#d85a4a;
   color:#fff;
+
   font-family:sans-serif;
   font-size:10px;
   font-weight:normal;
+
   letter-spacing:0;
+
   padding:3px 7px;
+
   border-radius:2px;
 }
 
 
+/* 入力 */
+
 .contact-form input,
 .contact-form select,
 .contact-form textarea{
+
   width:100%;
+
   box-sizing:border-box;
+
   border:1px solid #ddd;
+
   background:#fff;
+
   border-radius:3px;
+
   padding:14px 15px;
+
   font-family:"Shippori Mincho B1", serif;
+
   font-size:14px;
+
   color:#555;
+
   outline:none;
 }
 
@@ -235,7 +234,9 @@
 }
 
 
-/* 個人情報 */
+/* =====================================
+   個人情報
+===================================== */
 
 .privacy{
   margin-top:40px;
@@ -244,33 +245,48 @@
 
 .privacy h3{
   font-family:"Shippori Mincho B1", serif;
+
   font-size:14px;
+
   font-weight:600;
+
   letter-spacing:.08em;
+
   margin:0 0 12px;
+
   color:#333;
 }
 
 .privacy p{
   font-family:"Shippori Mincho B1", serif;
+
   font-size:12px;
+
   line-height:2;
+
   color:#888;
+
   margin:0 0 15px;
 }
 
 .agree{
   display:flex;
+
   align-items:center;
+
   gap:10px;
+
   font-family:"Shippori Mincho B1", serif;
+
   font-size:12px;
+
   color:#555;
 }
 
 .agree input{
   width:20px;
   height:20px;
+
   margin:0;
 }
 
@@ -279,20 +295,33 @@
 }
 
 
-/* 確認ボタン */
+/* =====================================
+   確認ボタン
+===================================== */
 
 .confirm-btn{
   width:100%;
+
   height:52px;
+
   border:none;
+
   border-radius:28px;
+
   background:#333;
+
   color:#fff;
+
   font-family:"Shippori Mincho B1", serif;
+
   font-size:15px;
+
   letter-spacing:.1em;
+
   cursor:pointer;
+
   margin-top:28px;
+
   transition:.3s;
 }
 
@@ -306,50 +335,80 @@
 ===================================== */
 
 .contact-bottom{
+
   max-width:900px;
+
   margin:80px auto 0;
+
   padding:50px 20px 0;
+
   border-top:1px solid #c9a227;
+
   text-align:center;
 }
 
 .contact-phone h3{
+
   font-family:"Shippori Mincho B1", serif;
+
   font-size:20px;
+
   font-weight:400;
+
   letter-spacing:.12em;
+
   margin:0 0 18px;
 }
 
 .contact-phone a{
+
   color:#333;
+
   text-decoration:none;
+
   font-size:23px;
+
   letter-spacing:.08em;
 }
 
+
+/* SNS */
+
 .sns-area{
+
   display:flex;
+
   justify-content:center;
+
   gap:60px;
+
   margin-top:40px;
 }
 
 .sns-area a{
+
   text-decoration:none;
+
   color:#333;
+
   text-align:center;
 }
 
 .sns-area img{
+
   width:55px;
+
   height:55px;
+
   object-fit:contain;
+
   margin:0 auto 8px;
 }
 
 .sns-area p{
+
   margin:0;
+
   font-size:13px;
 }
 
@@ -361,94 +420,174 @@
 @media(max-width:768px){
 
   .contact-hero{
+
     padding:55px 20px 35px;
   }
 
   .contact-hero h1{
+
     font-size:29px;
+
     letter-spacing:5px;
   }
 
   .contact-lead{
+
     font-size:13px;
+
     margin-bottom:35px;
   }
 
   .contact-main{
+
     display:block;
+
     padding:0 20px;
   }
 
   .contact-images{
+
     column-count:2;
+
     column-gap:8px;
+
     margin-bottom:45px;
   }
 
   .contact-images img{
+
     margin-bottom:8px;
   }
 
   .contact-form{
+
     padding:0;
   }
 
   .contact-bottom{
+
     margin:60px 20px 0;
   }
 
 }
 
 </style>
+
 </head>
 
+
 <body>
+
+
+<!-- =====================================
+     ヘッダー
+===================================== -->
 
 <header class="header">
 
   <div class="bg-slideshow">
+
     <img src="images/IMG_9242.JPG" class="active">
+
     <img src="images/IMG_4097.JPG">
+
     <img src="images/IMG_4102.JPG">
+
     <img src="images/IMG_3938.jpeg">
+
   </div>
 
+
   <div class="hero-text">
-    <p class="sect">浄土真宗本願寺派</p>
+
+    <p class="sect">
+      浄土真宗本願寺派
+    </p>
 
     <h1 class="temple-title">
-      <span class="mountain">攝刕山</span>
+
+      <span class="mountain">
+        攝刕山
+      </span>
+
       西光寺
+
     </h1>
 
-    <p class="romaji">SAIKOJI</p>
+    <p class="romaji">
+      SAIKOJI
+    </p>
+
   </div>
 
 </header>
 
 
-<main>
+
+<!-- =====================================
+     ナビゲーション
+===================================== -->
 
 <nav class="navbar">
+
   <ul>
-    <li><a href="index.html">ホーム</a></li>
-    <li><a href="aisatsu.html">ご挨拶</a></li>
-    <li><a href="saikouji.html">西光寺について</a></li>
-    <li><a href="access.html">アクセス</a></li>
-    <li><a href="otoiawase.html">お問い合わせ</a></li>
+
+    <li>
+      <a href="index.html">
+        ホーム
+      </a>
+    </li>
+
+    <li>
+      <a href="aisatsu.html">
+        ご挨拶
+      </a>
+    </li>
+
+    <li>
+      <a href="saikouji.html">
+        西光寺について
+      </a>
+    </li>
+
+    <li>
+      <a href="access.html">
+        アクセス
+      </a>
+    </li>
+
+    <li>
+      <a href="otoiawase.html">
+        お問い合わせ
+      </a>
+    </li>
+
   </ul>
+
 </nav>
 
 
-<!-- お問い合わせページ -->
+
+<!-- =====================================
+     お問い合わせ
+===================================== -->
+
+<main>
 
 <section class="contact-page">
 
+
+  <!-- タイトル -->
+
   <header class="contact-hero">
 
-    <h1>お問い合わせ</h1>
+    <h1>
+      お問い合わせ
+    </h1>
 
-    <p>Contact</p>
+    <p>
+      Contact
+    </p>
 
     <div class="contact-decoration"></div>
 
@@ -459,10 +598,15 @@
   </header>
 
 
+
+  <!-- =====================================
+       写真＋フォーム
+  ===================================== -->
+
   <div class="contact-main">
 
 
-    <!-- 左：写真 -->
+    <!-- 写真 -->
 
     <div class="contact-images">
 
@@ -485,7 +629,8 @@
     </div>
 
 
-    <!-- 右：お問い合わせフォーム -->
+
+    <!-- フォーム -->
 
     <div class="contact-form">
 
@@ -505,6 +650,7 @@
       </div>
 
 
+
       <div class="form-group">
 
         <label>
@@ -518,6 +664,7 @@
         >
 
       </div>
+
 
 
       <div class="form-group">
@@ -535,6 +682,7 @@
       </div>
 
 
+
       <div class="form-group">
 
         <label>
@@ -547,6 +695,7 @@
         >
 
       </div>
+
 
 
       <div class="form-group">
@@ -587,6 +736,7 @@
       </div>
 
 
+
       <div class="form-group">
 
         <label>
@@ -601,9 +751,14 @@
       </div>
 
 
+
+      <!-- 個人情報 -->
+
       <div class="privacy">
 
-        <h3>個人情報の取り扱いについて</h3>
+        <h3>
+          個人情報の取り扱いについて
+        </h3>
 
         <p>
           ご入力いただいた個人情報は、お問い合わせへの回答のみに使用いたします。
@@ -617,14 +772,22 @@
             上記の内容に同意します
           </span>
 
-          <span class="required">必須</span>
+          <span class="required">
+            必須
+          </span>
 
         </label>
 
       </div>
 
 
-      <button type="button" class="confirm-btn">
+
+      <!-- 確認ボタン -->
+
+      <button
+        type="button"
+        class="confirm-btn"
+      >
         確認画面へ進む
       </button>
 
@@ -634,13 +797,19 @@
   </div>
 
 
-  <!-- 電話・SNS -->
+
+  <!-- =====================================
+       電話・SNS
+  ===================================== -->
 
   <section class="contact-bottom">
 
+
     <div class="contact-phone">
 
-      <h3>お電話でのお問い合わせ</h3>
+      <h3>
+        お電話でのお問い合わせ
+      </h3>
 
       <a href="tel:0790-62-0549">
         ☎ 0790-62-0549
@@ -649,155 +818,54 @@
     </div>
 
 
+
     <div class="sns-area">
 
-      <a href="LINEのURL" target="_blank">
-        <img src="images/icons8-line-480.png" alt="LINE">
-        <p>LINE</p>
+      <a
+        href="LINEのURL"
+        target="_blank"
+      >
+
+        <img
+          src="images/icons8-line-480.png"
+          alt="LINE"
+        >
+
+        <p>
+          LINE
+        </p>
+
       </a>
+
+
 
       <a
         href="https://www.instagram.com/_gomyo_saikoji/"
         target="_blank"
       >
+
         <img
           src="images/tempImagelKLraI-Photoroom.png"
           alt="Instagram"
         >
-        <p>Instagram</p>
+
+        <p>
+          Instagram
+        </p>
+
       </a>
 
     </div>
 
+
   </section>
+
 
 </section>
 
 </main>
 
 
-<footer class="footer">
-
-  <div class="footer-inner">
-
-    <p class="footer-title">
-      <span class="mountain">攝刕山</span>
-      <span class="temple">西光寺</span>
-    </p>
-
-    <div class="footer-address">
-      <p>〒671-2554</p>
-      <p>兵庫県宍粟市山崎町御名190</p>
-      <p>TEL:0790-62-0549</p>
-    </div>
-
-    <div class="footer-sns">
-      <a
-        href="https://www.instagram.com/_gomyo_saikoji/"
-        target="_blank"
-      >
-        <img
-          src="images/tempImagelKLraI-Photoroom.png"
-          alt="Instagram"
-          width="80"
-        >
-      </a>
-    </div>
-
-    <p class="copyright">© Saikoji</p>
-
-  </div>
-
-</footer>
-
 </body>
+
 </html>
-  
-<header class="sub-hero">
-<h1>お問い合わせ</h1>
-<p>Contact</p>
-</header>
-
-<div class="contact-container">
-
-  <!-- 左：写真 -->
-  <div class="contact-images">
-
-    <img src="images/FEF231C7-CC84-4108-99FF-E39889BC46F6.JPEG">
-    <img src="images/BE584FDE-764A-4108-9BAE-8AE7DD078787.JPEG">
-    <img src="images/IMG_4096.JPG">
-    <img src="images/IMG_4106.JPG">
-    <img src="images/IMG_5420.JPG">
-    <img src="images/IMG_5471.JPG">
-    <img src="images/IMG_5570.JPG">
-    <img src="images/43810C98-5E9C-4A87-864B-58EE865A26D9.JPEG">
-
-  </div>
-  
-  <!-- お問い合わせフォーム -->
-  <div class="contact-form">
-
-    <div class="form-group">
-      <label>氏名</label>
-      <input type="text" placeholder="お名前">
-    </div>
-
-    <div class="form-group">
-      <label>住所</label>
-      <input type="text" placeholder="ご住所">
-    </div>
-
-    <div class="form-group">
-      <label>メールアドレス</label>
-      <input type="email" placeholder="example@gmail.com">
-    </div>
-
-    <div class="form-group">
-      <label>電話番号</label>
-      <input type="tel" placeholder="090-1234-5678">
-    </div>
-
-    <div class="form-group">
-      <label>お問い合わせ内容</label>
-      <textarea rows="6" placeholder="お問い合わせ内容をご入力ください"></textarea>
-    </div>
-
-    <button class="contact-btn">送信する</button>
-
-  </div>
-</div>
-
-  <hr class="gold-line">
-
-  <!-- 電話 -->
-  <div class="contact-bottom">
-  <div class="contact-phone">
-    <h3>お電話でのお問い合わせ</h3>
-
-    <a href="tel:0790-62-0459">
-      ☎ 0790-62-0459
-    </a>
-  </div>
-
-  <hr class="gold-line">
-
-  <!-- SNS -->
-  <div class="sns-area">
-
-    <a href="LINEのURL" target="_blank">
-      <img src="images/icons8-line-480.png" alt="LINE">
-      <p>LINE</p>
-    </a>
-
-    <a href="https://www.instagram.com/_gomyo_saikoji/" target="_blank">
-      <img src="images/tempImagelKLraI-Photoroom.png" alt="Instagram">
-      <p>Instagram</p>
-    </a>
-
-  </div>
-
-</div>
-
-</body>
-</html>
- 
