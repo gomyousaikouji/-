@@ -84,46 +84,128 @@
   
 </div>
 
-<section class="info">
-  <h2 class="info-title">Information</h2>
-  
-<div class="info-item">
-  <div class="info-header">
-    <span class="info-date">2026.03.9</span>
-    <span class="tag">法要・行事</span>  
-    <span class="info-title">常例法座のお知らせ</span>
-  </div>
-  <div class="info-detail">
-    3月9日 ①午後1時30分より　②午後７時より<br>
-    本堂にて常例法座がございます。どうぞお参りください。<br>
-    ご講師(大阪教区交野組法音寺・朝山大俊氏)
-  </div>
-</div>
+<section class="information-area">
 
-<div class="info-item">
-<div class="info-header">
-    <span class="info-date">2026.03.13~14</span>
-    <span class="tag">法要・行事</span>  
-    <span class="info-title">永代経法要のお知らせ</span>
+  <div class="information-heading">
+    <p>INFORMATION</p>
+    <h2>お知らせ</h2>
+    <span></span>
   </div>
-  <div class="info-detail">
-    3月13~14日 13日　①午後1時より　②午後７時より<br>
-    　　　　　 　14日　①午後1時より<br>
-    本堂にて永代経法要がございます。どうぞお参りください。<br>
-    ご講師(兵庫教区宍粟組明源寺・杉山義伸氏)
-  </div>  
-</div>  
 
-  
+  <div class="information-list">
+
+    <!-- お知らせ① -->
+    <div class="information-item">
+
+      <button class="information-header" type="button">
+
+        <div class="information-meta">
+          <span class="information-date">2026.03.09</span>
+          <span class="information-tag">法要・行事</span>
+        </div>
+
+        <span class="information-name">
+          常例法座のお知らせ
+        </span>
+
+        <span class="information-arrow">＋</span>
+
+      </button>
+
+      <div class="information-detail">
+
+        <p>
+          3月9日<br>
+          ① 午後1時30分より　② 午後7時より
+        </p>
+
+        <p>
+          本堂にて常例法座がございます。<br>
+          どうぞお参りください。
+        </p>
+
+        <p class="information-lecturer">
+          ご講師<br>
+          大阪教区交野組 法音寺<br>
+          朝山大俊氏
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- お知らせ② -->
+    <div class="information-item">
+
+      <button class="information-header" type="button">
+
+        <div class="information-meta">
+          <span class="information-date">2026.03.13–14</span>
+          <span class="information-tag">法要・行事</span>
+        </div>
+
+        <span class="information-name">
+          永代経法要のお知らせ
+        </span>
+
+        <span class="information-arrow">＋</span>
+
+      </button>
+
+      <div class="information-detail">
+
+        <p>
+          3月13日<br>
+          ① 午後1時より　② 午後7時より
+        </p>
+
+        <p>
+          3月14日<br>
+          ① 午後1時より
+        </p>
+
+        <p>
+          本堂にて永代経法要がございます。<br>
+          どうぞお参りください。
+        </p>
+
+        <p class="information-lecturer">
+          ご講師<br>
+          兵庫教区宍粟組 明源寺<br>
+          杉山義伸氏
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
 <script>
-document.querySelectorAll('.info-header').forEach(item=>{
-  item.addEventListener('click',()=>{
-    item.parentElement.classList.toggle('active');
+document.querySelectorAll('.information-header').forEach(button => {
+
+  button.addEventListener('click', () => {
+
+    const item = button.parentElement;
+
+    item.classList.toggle('active');
+
+    const arrow = button.querySelector('.information-arrow');
+
+    if (item.classList.contains('active')) {
+      arrow.textContent = '−';
+    } else {
+      arrow.textContent = '＋';
+    }
+
   });
+
 });
-</script>
+</script>  
   
-</section>  
 <div class="info-button-wrap">
   <a href="jihou.html" class="temple-btn">
     寺報（御名だより）
