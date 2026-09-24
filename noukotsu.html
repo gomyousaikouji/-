@@ -1,1 +1,807 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>個別納骨墓｜西光寺</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+<style>
+
+/* =====================================
+   個別納骨墓ページ
+===================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+.noukotsu-page {
+  background: #f8f6f1;
+  color: #3d3a35;
+  font-family: "Shippori Mincho B1", serif;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.noukotsu-hero {
+  position: relative;
+  height: 620px;
+  overflow: hidden;
+}
+
+.noukotsu-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.noukotsu-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,.48),
+    rgba(0,0,0,.12),
+    rgba(0,0,0,.05)
+  );
+}
+
+.noukotsu-hero-text {
+  position: absolute;
+  z-index: 2;
+  left: 11%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.noukotsu-label {
+  font-size: 13px;
+  letter-spacing: .3em;
+  margin-bottom: 25px;
+}
+
+.noukotsu-hero h1 {
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: .15em;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.noukotsu-hero-lead {
+  font-size: 17px;
+  letter-spacing: .12em;
+  line-height: 2;
+}
+
+
+/* =====================================
+   INTRO
+===================================== */
+
+.noukotsu-intro {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 30px 90px;
+  text-align: center;
+}
+
+.noukotsu-intro h2 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: .12em;
+  margin: 0 0 40px;
+}
+
+.noukotsu-intro p {
+  font-size: 15px;
+  line-height: 2.5;
+  letter-spacing: .08em;
+  margin: 0;
+}
+
+
+/* =====================================
+   悩み
+===================================== */
+
+.noukotsu-worries {
+  background: #fff;
+  padding: 90px 30px;
+}
+
+.noukotsu-worries-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: .3em;
+  color: #a98a4b;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: .12em;
+  margin: 0 0 50px;
+}
+
+.worry-list {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.worry-item {
+  padding: 35px 25px;
+  border: 1px solid #e2ddd3;
+  text-align: center;
+  background: #faf9f6;
+}
+
+.worry-item span {
+  display: block;
+  font-size: 28px;
+  color: #b49a63;
+  margin-bottom: 18px;
+}
+
+.worry-item p {
+  font-size: 15px;
+  line-height: 2;
+  margin: 0;
+}
+
+
+/* =====================================
+   西光寺が守る
+===================================== */
+
+.noukotsu-message {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 110px 40px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.noukotsu-message-image {
+  width: 48%;
+}
+
+.noukotsu-message-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.noukotsu-message-text {
+  flex: 1;
+}
+
+.noukotsu-message-text .section-label {
+  text-align: left;
+}
+
+.noukotsu-message-text h2 {
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: .1em;
+  margin: 0 0 25px;
+}
+
+.noukotsu-message-text p {
+  font-size: 14px;
+  line-height: 2.4;
+  letter-spacing: .07em;
+  margin: 0;
+}
+
+
+/* =====================================
+   33年間
+===================================== */
+
+.noukotsu-years {
+  background: #eee9de;
+  padding: 90px 30px;
+  text-align: center;
+}
+
+.years-small {
+  font-size: 13px;
+  letter-spacing: .3em;
+  color: #9c8148;
+  margin-bottom: 15px;
+}
+
+.noukotsu-years h2 {
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: .12em;
+  margin: 0 0 30px;
+}
+
+.noukotsu-years h2 strong {
+  font-size: 64px;
+  font-weight: 400;
+  color: #9f8142;
+}
+
+.noukotsu-years p {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 2.5;
+  letter-spacing: .08em;
+}
+
+
+/* =====================================
+   利用について
+===================================== */
+
+.noukotsu-use {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 100px 30px;
+}
+
+.use-box {
+  border-top: 1px solid #cbbd9f;
+  border-bottom: 1px solid #cbbd9f;
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.use-box h2 {
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: .12em;
+  margin: 0 0 25px;
+}
+
+.use-box p {
+  font-size: 14px;
+  line-height: 2.5;
+  margin: 0;
+}
+
+
+/* =====================================
+   これからのお墓
+===================================== */
+
+.future {
+  background: #fff;
+  padding: 100px 30px;
+}
+
+.future-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.future h2 {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: .12em;
+  margin: 0 0 35px;
+}
+
+.future p {
+  font-size: 15px;
+  line-height: 2.5;
+  letter-spacing: .08em;
+  margin: 0;
+}
+
+
+/* =====================================
+   最後
+===================================== */
+
+.noukotsu-contact {
+  background: #3f3b35;
+  color: #fff;
+  text-align: center;
+  padding: 90px 30px;
+}
+
+.noukotsu-contact h2 {
+  font-size: 29px;
+  font-weight: 400;
+  letter-spacing: .15em;
+  margin: 0 0 25px;
+}
+
+.noukotsu-contact p {
+  font-size: 14px;
+  letter-spacing: .1em;
+  margin: 0 0 35px;
+}
+
+.noukotsu-contact a {
+  display: inline-block;
+  padding: 15px 55px;
+  border: 1px solid #c9b27c;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: .15em;
+  transition: .3s;
+}
+
+.noukotsu-contact a:hover {
+  background: #c9b27c;
+}
+
+
+/* =====================================
+   スマホ
+===================================== */
+
+@media (max-width: 768px) {
+
+  .noukotsu-hero {
+    height: 500px;
+  }
+
+  .noukotsu-hero-text {
+    left: 8%;
+  }
+
+  .noukotsu-hero h1 {
+    font-size: 32px;
+  }
+
+  .noukotsu-hero-lead {
+    font-size: 14px;
+  }
+
+  .noukotsu-intro {
+    padding: 70px 25px;
+  }
+
+  .noukotsu-intro h2,
+  .section-title {
+    font-size: 25px;
+  }
+
+  .worry-list {
+    grid-template-columns: 1fr;
+  }
+
+  .noukotsu-message {
+    display: block;
+    padding: 70px 25px;
+  }
+
+  .noukotsu-message-image {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .noukotsu-message-image img {
+    height: 350px;
+  }
+
+  .noukotsu-years h2 {
+    font-size: 30px;
+  }
+
+  .noukotsu-years h2 strong {
+    font-size: 48px;
+  }
+
+}
+
+/* 個別納骨墓 詳しく見るボタン */
+.ossuary-btn {
+  position: relative;
+  z-index: 100;
+  pointer-events: auto !important;
+  cursor: pointer;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     共通ヘッダー
+===================================== -->
+
+<header class="header">
+
+  <div class="bg-slideshow">
+
+    <img src="images/IMG_9242.JPG" class="active">
+
+    <img src="images/IMG_4097.JPG">
+
+    <img src="images/IMG_4102.JPG">
+
+    <img src="images/IMG_3938.jpeg">
+
+  </div>
+
+
+  <div class="hero-text">
+
+    <p class="sect">
+      浄土真宗本願寺派
+    </p>
+
+    <h1 class="temple-title">
+
+      <span class="mountain">
+        攝刕山
+      </span>
+
+      西光寺
+
+    </h1>
+
+    <p class="romaji">
+      SAIKOJI
+    </p>
+
+  </div>
+
+</header>
+
+
+<!-- =====================================
+     ナビ
+===================================== -->
+
+<nav class="navbar">
+
+  <ul>
+
+    <li>
+      <a href="index.html">
+        ホーム
+      </a>
+    </li>
+
+    <li>
+      <a href="aisatsu.html">
+        ご挨拶
+      </a>
+    </li>
+
+    <li>
+      <a href="saikouji.html">
+        西光寺について
+      </a>
+    </li>
+
+    <li>
+      <a href="access.html">
+        アクセス
+      </a>
+    </li>
+
+    <li>
+      <a href="otoiawase.html">
+        お問い合わせ
+      </a>
+    </li>
+
+  </ul>
+
+</nav>
+
+
+<!-- =====================================
+     個別納骨墓
+===================================== -->
+
+<main class="noukotsu-page">
+
+
+<!-- HERO -->
+
+<section class="noukotsu-hero">
+
+  <img
+    src="images/IMG_7415.jpeg"
+    alt="西光寺 個別納骨墓"
+  >
+
+  <div class="noukotsu-hero-text">
+
+    <div class="noukotsu-label">
+      SAIKOJI / INDIVIDUAL OSSUARY
+    </div>
+
+    <h1>
+      墓じまいのいらないお墓
+    </h1>
+
+    <p class="noukotsu-hero-lead">
+      これからのお墓を、もっとシンプルに。
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="noukotsu-intro">
+
+  <h2>
+    大切な人を、いつまでも身近に。
+  </h2>
+
+  <p>
+
+    「お墓を守っていく人がいない」<br>
+
+    「子どもや孫に負担をかけたくない」<br>
+
+    「将来、墓じまいをするのは大変そう」<br><br>
+
+    そんな声にお応えするために、<br>
+
+    西光寺では個別納骨墓をご用意しています。
+
+  </p>
+
+</section>
+
+
+<!-- 西光寺が守るお墓 -->
+
+<section class="noukotsu-message">
+
+  <div class="noukotsu-message-image">
+
+    <img
+      src="images/IMG_7415.jpeg"
+      alt="西光寺の個別納骨墓"
+    >
+
+  </div>
+
+
+  <div class="noukotsu-message-text">
+
+    <div class="section-label">
+      ABOUT THE OSSUARY
+    </div>
+
+    <h2>
+      西光寺が、<br>
+      大切なお墓をお守りします。
+    </h2>
+
+    <p>
+
+      西光寺の個別納骨墓は、<br>
+      西光寺が責任をもってお守りしていくお墓です。<br><br>
+
+      今あるお墓を将来どうするかという心配を減らし、<br>
+      次の世代へ負担を残さず、<br>
+      安心してお参りいただける場所を目指しています。
+
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- 33年間 -->
+
+<section class="noukotsu-years">
+
+  <div class="years-small">
+    LONG-TERM PEACE OF MIND
+  </div>
+
+  <h2>
+
+    <strong>33</strong>年間、<br>
+
+    安心しておまかせいただけます。
+
+  </h2>
+
+  <p>
+
+    納骨後は、定められた期間、西光寺にてお守りいたします。<br>
+
+    その後継続して利用することも可能です。<br><br>
+
+    もし、守る人が居なくなった。<br>
+
+    自分で途絶えてしまう。<br>
+
+    そんな時でも西光寺が最後まで守ります。
+
+  </p>
+
+</section>
+
+
+<!-- 利用について -->
+
+<section class="noukotsu-use">
+
+  <div class="use-box">
+
+    <h2>
+      ご自身のためのお墓として
+    </h2>
+
+    <p>
+
+      また、ご家族のお墓としてもご利用いただけます。<br><br>
+
+      「自分が元気なうちに、<br>
+      将来のことを決めておきたい」<br><br>
+
+      そんな方にもご相談いただけます。
+
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- これからのお墓 -->
+
+<section class="future">
+
+  <div class="future-inner">
+
+    <div class="section-label">
+      THE FUTURE OF GRAVES
+    </div>
+
+    <h2>
+
+      これからのお墓を、<br>
+
+      もっとシンプルに。
+
+    </h2>
+
+    <p>
+
+      大きなお墓を建てる必要も、<br>
+
+      将来の墓じまいを心配する必要もありません。<br><br>
+
+      「今」だけでなく、<br>
+
+      「これから」の安心まで考えたお墓。<br><br>
+
+      それが、西光寺の個別納骨墓です。
+
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- お問い合わせ -->
+
+<section class="noukotsu-contact">
+
+  <h2>
+    まずはお気軽にご相談ください。
+  </h2>
+
+  <p>
+    個別納骨墓についてのお問い合わせ・ご相談を承っております。
+  </p>
+
+  <a href="otoiawase.html">
+    お問い合わせはこちら
+  </a>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================
+     フッター
+===================================== -->
+
+<footer class="footer">
+
+  <div class="footer-inner">
+
+    <p class="footer-title">
+
+      <span class="mountain">
+        攝刕山
+      </span>
+
+      <span class="temple">
+        西光寺
+      </span>
+
+    </p>
+
+
+    <div class="footer-address">
+
+      <p>
+        〒671-2554
+      </p>
+
+      <p>
+        兵庫県宍粟市山崎町御名190
+      </p>
+
+      <p>
+        TEL:0790-62-0549
+      </p>
+
+    </div>
+
+
+    <div class="footer-sns">
+
+      <a
+        href="https://www.instagram.com/_gomyo_saikoji/"
+        target="_blank"
+      >
+
+        <img
+          src="images/tempImagelKLraI-Photoroom.png"
+          alt="Instagram"
+          width="80"
+        >
+
+      </a>
+
+    </div>
+
+
+    <p class="copyright">
+      © Saikoji
+    </p>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
