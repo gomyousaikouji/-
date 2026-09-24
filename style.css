@@ -1406,3 +1406,75 @@ grid-template-columns:1fr;
 }
 
 }
+
+/* =========================
+   ご挨拶・西光寺について・アクセス
+   ページタイトル
+========================= */
+
+.page-heading {
+  text-align: center;
+  padding: 75px 20px 55px;
+}
+
+.page-heading h1 {
+  margin: 0;
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  color: #333;
+}
+
+.page-heading .page-en {
+  margin: 12px 0 14px;
+  font-size: 15px;
+  letter-spacing: 0.35em;
+  color: #777;
+}
+
+.page-heading .page-mark {
+  display: block;
+  margin-bottom: 22px;
+  color: #b7a96b;
+  font-size: 17px;
+  letter-spacing: 8px;
+}
+
+.page-heading .page-description {
+  margin: 0;
+  font-size: 15px;
+  line-height: 2;
+  letter-spacing: 0.15em;
+  color: #777;
+}
+
+
+/* スマホ */
+
+@media screen and (max-width: 600px) {
+
+  .page-heading {
+    padding: 55px 20px 40px;
+  }
+
+  .page-heading h1 {
+    font-size: 30px;
+  }
+
+  .page-heading .page-en {
+    font-size: 12px;
+    margin: 9px 0 12px;
+  }
+
+  .page-heading .page-mark {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+
+  .page-heading .page-description {
+    font-size: 13px;
+    line-height: 1.9;
+  }
+
+}
