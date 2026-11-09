@@ -564,6 +564,23 @@ prevEl:".seijinSwiper .swiper-button-prev",
 });
 
 </script>
+
+<script>
+document.querySelectorAll('.active-gallery .more-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const galleryBlock = button.closest('.gallery-block');
+    const extraPhotos = galleryBlock.querySelector('.extra-photos');
+
+    if (!extraPhotos) return;
+
+    const isOpen = extraPhotos.classList.toggle('active');
+
+    button.textContent = isOpen
+      ? '写真を閉じる −'
+      : '写真をもっと表示する ＋';
+  });
+});
+</script>  
   
 </body>
 </html>
