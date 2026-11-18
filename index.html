@@ -342,85 +342,87 @@ document.querySelectorAll('.information-header').forEach(button => {
   
 <section class="active-gallery">
 
-  <div class="gallery-heading">
-    <p>SAIKOJI / DAILY LIFE</p>
-    <h2>Active Gallery</h2>
-    <span></span>
-    <p class="gallery-lead">西光寺の日々の風景をご紹介します。</p>
-  </div>
+  <h2 class="gallery-title">Active Gallery</h2>
+  <p class="gallery-subtitle">西光寺の日々の風景をご紹介します。</p>
 
-  <!-- 1 法座・法要・行事 -->
+  <!-- 1. 法座・法要・行事：説明左・写真右 -->
   <div class="gallery-block">
-    <h3 class="category-title">法座・法要・行事</h3>
     <div class="gallery-row">
-      <div class="photo" style="background-image:url('photo1.jpg')"></div>
-      <div class="photo" style="background-image:url('photo2.jpg')"></div>
-      <div class="comment charcoal">
-        <div>
-          ご法座や法要の様子をご紹介します。
-          <button class="more-btn" type="button">写真をもっと表示する ＋</button>
-        </div>
+      <div class="gallery-info">
+        <h3 class="category-title">法座・法要・行事</h3>
+        <p>ご法座や法要の様子をご紹介します。</p>
+        <button class="more-btn" type="button">写真をもっと見る →</button>
+      </div>
+
+      <div class="gallery-photos">
+        <div class="photo" style="background-image:url('photo1.jpg')"></div>
+        <div class="photo" style="background-image:url('photo2.jpg')"></div>
       </div>
     </div>
+
     <div class="extra-photos">
       <div class="photo" style="background-image:url('photo3.jpg')"></div>
       <div class="photo" style="background-image:url('photo4.jpg')"></div>
     </div>
   </div>
 
-  <!-- 2 子ども向け行事 -->
-  <div class="gallery-block">
-    <h3 class="category-title">子ども向け行事</h3>
-    <div class="gallery-row reverse">
-      <div class="comment cream">
-        <div>
-          子どもたちの笑顔あふれる時間。
-          学びと遊びのひととき。
-          <button class="more-btn" type="button">写真をもっと表示する ＋</button>
-        </div>
+  <!-- 2. 子ども向け行事：写真左・説明右 -->
+  <div class="gallery-block reverse">
+    <div class="gallery-row">
+      <div class="gallery-photos">
+        <div class="photo" style="background-image:url('images/IMG_0924.jpeg')"></div>
+        <div class="photo" style="background-image:url('images/IMG_0919.jpeg')"></div>
       </div>
-      <div class="photo" style="background-image:url('images/IMG_0924.jpeg')"></div>
-      <div class="photo" style="background-image:url('images/IMG_0919.jpeg')"></div>
+
+      <div class="gallery-info">
+        <h3 class="category-title">子ども向け行事</h3>
+        <p>子どもたちの笑顔あふれる時間。<br>学びと遊びのひととき。</p>
+        <button class="more-btn" type="button">写真をもっと見る →</button>
+      </div>
     </div>
+
     <div class="extra-photos">
       <div class="photo" style="background-image:url('photo7.jpg')"></div>
       <div class="photo" style="background-image:url('photo8.jpg')"></div>
     </div>
   </div>
 
-  <!-- 3 活動風景 -->
+  <!-- 3. 活動風景：説明左・写真右 -->
   <div class="gallery-block">
-    <h3 class="category-title">活動風景</h3>
     <div class="gallery-row">
-      <div class="photo" style="background-image:url('photo9.jpg')"></div>
-      <div class="photo" style="background-image:url('photo10.jpg')"></div>
-      <div class="comment charcoal">
-        <div>
-          西光寺で行われるさまざまな活動。
-          <button class="more-btn" type="button">写真をもっと表示する ＋</button>
-        </div>
+      <div class="gallery-info">
+        <h3 class="category-title">活動風景</h3>
+        <p>西光寺で行われるさまざまな活動をご紹介します。</p>
+        <button class="more-btn" type="button">写真をもっと見る →</button>
+      </div>
+
+      <div class="gallery-photos">
+        <div class="photo" style="background-image:url('photo1.jpg')"></div>
+        <div class="photo" style="background-image:url('photo2.jpg')"></div>
       </div>
     </div>
+
     <div class="extra-photos">
-      <div class="photo" style="background-image:url('photo11.jpg')"></div>
-      <div class="photo" style="background-image:url('photo12.jpg')"></div>
+      <div class="photo" style="background-image:url('photo3.jpg')"></div>
+      <div class="photo" style="background-image:url('photo4.jpg')"></div>
     </div>
   </div>
 
-  <!-- 4 日常風景 -->
-  <div class="gallery-block">
-    <h3 class="category-title">日常風景</h3>
-    <div class="gallery-row reverse">
-      <div class="comment cream">
-        <div>
-          普段の何気ないひととき。
-          四季が魅せる西光寺の魅力。
-          <button class="more-btn" type="button">写真をもっと表示する ＋</button>
-        </div>
+  <!-- 4. 日常風景：写真左・説明右 -->
+  <div class="gallery-block reverse">
+    <div class="gallery-row">
+      <div class="gallery-photos">
+        <div class="photo" style="background-image:url('images/IMG_4101.JPG')"></div>
+        <div class="photo" style="background-image:url('images/IMG_4098.JPG')"></div>
       </div>
-      <div class="photo" style="background-image:url('images/IMG_4101.JPG')"></div>
-      <div class="photo" style="background-image:url('images/IMG_4098.JPG')"></div>
+
+      <div class="gallery-info">
+        <h3 class="category-title">日常風景</h3>
+        <p>普段の何気ないひと時。<br>四季が魅せる西光寺の魅力。</p>
+        <button class="more-btn" type="button">写真をもっと見る →</button>
+      </div>
     </div>
+
     <div class="extra-photos">
       <div class="photo" style="background-image:url('photo15.jpg')"></div>
       <div class="photo" style="background-image:url('photo16.jpg')"></div>
@@ -429,6 +431,25 @@ document.querySelectorAll('.information-header').forEach(button => {
 
 </section>
 
+<script>
+document.querySelectorAll('.active-gallery .more-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const block = button.closest('.gallery-block');
+    const extra = block.querySelector('.extra-photos');
+
+    if (!extra) return;
+
+    const opened = extra.classList.toggle('active');
+
+    button.textContent = opened
+      ? '写真を閉じる −'
+      : '写真をもっと見る →';
+  });
+});
+</script>
+
+
+  
 <script>
 document.querySelectorAll('.gallery-block').forEach(block => {
   const button = block.querySelector('.more-btn');
