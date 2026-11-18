@@ -926,186 +926,175 @@ color:#444;
   opacity: 0.8;
 }
   
-/* ===== 施設案内 ===== */
+/* =================================
+   西光寺 施設案内
+================================= */
 
-.facility{
-
-    width:90%;
-    max-width:1200px;
-    margin:80px auto;
-
+.facility {
+  display: block !important;
+  width: calc(100% - 40px) !important;
+  max-width: 1100px !important;
+  margin: 60px auto 100px !important;
+  padding: 0 !important;
+  box-sizing: border-box;
 }
 
+/* 境内全景 */
 
-/* 航空写真 */
-
-.facility-main{
-
-    position:relative;
-    margin-bottom:50px;
-
+.facility-main {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+  height: 450px !important;
+  overflow: hidden !important;
+  margin-bottom: 16px !important;
 }
 
-.facility-main img{
-
-    width:100%;
-    display:block;
-    border-radius:15px;
-
+.facility-main img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
 }
 
-
-.facility-label{
-
-    position:absolute;
-
-    top:25px;
-    left:25px;
-
-    width:120px;
-    height:120px;
-
-    background:white;
-
-    border-radius:50%;
-
-    display:flex;
-
-    justify-content:center;
-    align-items:center;
-
-    font-size:24px;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
-
+.facility-label {
+  position: absolute !important;
+  left: 30px !important;
+  top: 30px !important;
+  width: 145px !important;
+  height: 145px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  background: rgba(255,255,255,.92) !important;
+  color: #36454F !important;
+  font-size: 22px !important;
+  font-weight: normal !important;
+  z-index: 2;
 }
 
+/* 施設一覧：3列 */
 
-
-/* 一覧 */
-
-.facility-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:25px;
-
+.facility-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  width: 100% !important;
 }
 
+/* 各施設の写真 */
 
-
-/* パソコン */
-
-@media(min-width:900px){
-
-.facility-grid{
-
-grid-template-columns:repeat(3,1fr);
-
+.facility-card {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+  height: 250px !important;
+  overflow: hidden !important;
+  text-decoration: none !important;
+  color: #fff !important;
 }
 
+.facility-card img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform .4s ease !important;
 }
 
-
-/* カード */
-
-.facility-card{
-
-    position:relative;
-
-    overflow:hidden;
-
-    border-radius:12px;
-
-    text-decoration:none;
-
-    color:white;
-
+.facility-card:hover img {
+  transform: scale(1.05);
 }
 
+/* 施設名の白い丸 */
 
-.facility-card img{
-
-    width:100%;
-
-    display:block;
-
-    transition:.5s;
-
+.facility-name {
+  position: absolute !important;
+  left: 16px !important;
+  top: 16px !important;
+  min-width: 90px;
+  min-height: 90px;
+  padding: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  border-radius: 50% !important;
+  background: rgba(255,255,255,.93) !important;
+  color: #36454F !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  text-align: center !important;
+  z-index: 2;
 }
 
+/* 写真に重なる説明 */
 
-/* 施設名 */
-
-.facility-name{
-
-    position:absolute;
-
-    top:15px;
-    left:15px;
-
-    width:90px;
-    height:90px;
-
-    background:white;
-
-    color:#333;
-
-    border-radius:50%;
-
-    display:flex;
-
-    justify-content:center;
-    align-items:center;
-
-    font-size:22px;
-
-    z-index:3;
-
+.facility-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 24px !important;
+  box-sizing: border-box !important;
+  background: rgba(35,40,30,.75) !important;
+  color: #fff !important;
+  font-size: 13px !important;
+  line-height: 2 !important;
+  text-align: center !important;
+  opacity: 0 !important;
+  transition: opacity .3s ease !important;
 }
 
-
-/* 説明 */
-
-.facility-overlay{
-
-    position:absolute;
-
-    left:0;
-    right:0;
-    bottom:0;
-
-    background:rgba(0,0,0,.65);
-
-    padding:20px;
-
-    opacity:0;
-
-    transition:.4s;
-
-    font-size:15px;
-
-    line-height:1.8;
-
+.facility-card:hover .facility-overlay {
+  opacity: 1 !important;
 }
 
+/* タブレット・スマートフォン */
 
-/* ホバー */
+@media screen and (max-width: 700px) {
+  .facility {
+    width: calc(100% - 24px) !important;
+    margin: 30px auto 60px !important;
+  }
 
-.facility-card:hover img{
+  .facility-main {
+    height: 260px !important;
+  }
 
-    transform:scale(1.08);
+  .facility-label {
+    width: 105px !important;
+    height: 105px !important;
+    left: 15px !important;
+    top: 15px !important;
+    font-size: 17px !important;
+  }
 
-}
+  .facility-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 9px !important;
+  }
 
+  .facility-card {
+    height: 160px !important;
+  }
 
-.facility-card:hover .facility-overlay{
+  .facility-name {
+    min-width: 65px;
+    min-height: 65px;
+    left: 8px !important;
+    top: 8px !important;
+    padding: 8px !important;
+    font-size: 14px !important;
+  }
 
-    opacity:1;
-
-}
+  .facility-overlay {
+    font-size: 11px !important;
+    padding: 10px !important;
+  }
+}  
 
   
 /* イチョウ模様 */
@@ -1560,114 +1549,6 @@ grid-template-columns:1fr;
 
 }
 
-/* =================================
-   施設案内レイアウト修正
-================================= */
-
-.facility {
-  max-width: 1100px;
-  margin: 60px auto 100px;
-  padding: 0 20px;
-}
-
-/* 最初の大きな写真 */
-
-.facility-main {
-  width: 100%;
-  height: 450px;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.facility-main img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.facility-label {
-  position: absolute;
-  left: 30px;
-  top: 30px;
-  background: rgba(255,255,255,.9);
-  padding: 25px 35px;
-  border-radius: 50%;
-  color: #647b48;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* 写真一覧：左右2列 */
-
-.facility-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-}
-
-/* 各写真 */
-
-.facility-card {
-  display: block;
-  position: relative;
-  height: 280px;
-  overflow: hidden;
-  text-decoration: none;
-  color: #fff;
-}
-
-.facility-card img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform .4s ease;
-}
-
-.facility-card:hover img {
-  transform: scale(1.05);
-}
-
-/* 写真の名前 */
-
-.facility-name {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  background: rgba(255,255,255,.92);
-  color: #647b48;
-  padding: 15px 22px;
-  border-radius: 50px;
-  font-size: 17px;
-  font-weight: bold;
-  z-index: 2;
-}
-
-/* 写真に重なる説明 */
-
-.facility-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  box-sizing: border-box;
-  background: rgba(35,40,30,.72);
-  color: #fff;
-  font-size: 14px;
-  line-height: 2;
-  text-align: center;
-  opacity: 0;
-  transition: opacity .3s ease;
-}
-
-.facility-card:hover .facility-overlay {
-  opacity: 1;
-}
-  
 
 /* =========================
    Active Gallery 修正版
